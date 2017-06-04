@@ -17,11 +17,13 @@ Version: 1.5.2
 	color: #ffffff;
 }
 /*
-	文章內頁圖片修正
+	文章內頁圖片修正及樣式美化
 */
 post img{
 	height:auto !important;
 	max-width:100%;
+    max-width: calc(100% - 20px);
+    margin: 10px;
 }
 /*
 	Sidebar用的CSS
