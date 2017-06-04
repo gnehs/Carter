@@ -30,7 +30,6 @@ post img{
 .sidebar > ul > li > a {
 	cursor: pointer;
 	background: transparent;
-	padding: 0.5em 0.5em;
 	color: rgba(0, 0, 0, 0.4);
 	margin: 0em;
 	border-radius: 0.28571rem;
@@ -53,6 +52,29 @@ post img{
 }
 
 .sidebar > ul > li > a:active  {
+	background: rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, 0.9); 
+}
+/* 階層式顯示 */
+.sidebar > ul > li > ul > li > a {
+	cursor: pointer;
+	background: transparent;
+	color: rgba(0, 0, 0, 0.4);
+	margin: 0em;
+	border-radius: 0.28571rem;
+	display: flex;
+    flex-wrap: wrap;
+    table-layout: fixed;
+    list-style-type: none;
+    list-style-position: outside;
+    line-height: 1.14286em;
+	padding: .5em 1em;
+}
+.sidebar > ul > li > ul > li > a:hover {
+	background: rgba(0, 0, 0, 0.03);
+	color: rgba(0, 0, 0, 0.8); 
+}
+.sidebar > ul > li > ul > li > a:active  {
 	background: rgba(0, 0, 0, 0.05);
 	color: rgba(0, 0, 0, 0.9); 
 }
