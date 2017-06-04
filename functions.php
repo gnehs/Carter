@@ -66,10 +66,10 @@ register_sidebar(array(
 'name' => '側邊欄',
 'id' => 'sidebar',
 'description' => '顯示於每個網頁的右方。',
-'before_widget' => '<div class="ts card"><div class="content sidebar">',
-'after_widget' => '</div></div>',
-'before_title' => '<div class="header" style="margin-bottom: 5px;">',
-'after_title' => '</div>'
+'before_widget' => '<div class="ts segment sidebar">',
+'after_widget' => '</div>',
+'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;">',
+'after_title' => '</h5>'
 ));
 }
 
