@@ -25,11 +25,11 @@
 				</div>
 			</div>
 			<?php if ( !is_user_logged_in() ) : ?>
-				<div class="ts fluid bottom attached buttons" id="PostOperation">
+				<div class="ts fluid bottom attached buttons post operation">
 					<a class="ts labeled icon button click load" href="<?php the_permalink(); ?>"><i class="unhide icon"></i>繼續閱讀</a>
 				</div>
        		<?php else : ?>
-				<div class="ts fluid bottom attached buttons" id="PostOperation">
+				<div class="ts fluid bottom attached buttons post operation">
 					<a class="ts labeled icon button click load" href="<?php the_permalink(); ?>"><i class="unhide icon"></i>繼續閱讀</a>
 					<?php edit_post_link('<i class="write icon"></i>編輯', ''); ?>
 				</div>

@@ -13,9 +13,6 @@ Version: 1.5.2
 .post .image{
 	opacity: 0.8;
 }
-.post{
-    background-color: #000 !important;
-}
 .post .description > a{
 	color: #ffffff;
 }
