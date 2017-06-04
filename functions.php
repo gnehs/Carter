@@ -101,6 +101,10 @@ function posts_link_attributes_previous() {
 */
 function gnehs_login_css() {
     echo '<style type="text/css">
+            .login h1 a{
+                background-color: white;
+                border-radius: 100%;
+            }
             .login-action-login{
                 background-image: url(//i.imgur.com/73fVUB6.jpg);
                 background-position: center;
