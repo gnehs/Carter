@@ -115,3 +115,10 @@ post img{
     color: #626262; 
 	background-color: rgba(0,0,0,.15);
 }
+/* 
+	.ts.image fix
+	修正在部分外掛下產生的圖片拉伸問題
+*/
+.ts.card>.image img {
+    height: auto !important;
+}
