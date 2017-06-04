@@ -92,7 +92,7 @@ function posts_link_attributes_next() {
     return 'class="ts primary labeled icon button click load"';
 }
 function posts_link_attributes_previous() {
-    return 'class="ts inverted labeled icon button click load"';
+    return 'class="ts inverted right labeled icon button click load"';
 }
 
 
