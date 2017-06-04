@@ -25,7 +25,7 @@ post img{
 }
 /*
 	Sidebar用的CSS
-	>Wordpress 的清單
+	Wordpress 的清單
 */
 .sidebar > ul > li > a {
 	cursor: pointer;
@@ -78,16 +78,41 @@ post img{
 	background: rgba(0, 0, 0, 0.05);
 	color: rgba(0, 0, 0, 0.9); 
 }
+/* 月曆 */
+.sidebar>#calendar_wrap>#wp-calendar{
+	width: 100%;
+	text-align: center;
+}
+.sidebar>#calendar_wrap>#wp-calendar>tbody>tr>td#today{
+	background-color: #deffb6;
+}
+.sidebar>#calendar_wrap>#wp-calendar>tbody>tr>td:hover,
+.sidebar>#calendar_wrap>#wp-calendar>tbody>tr>td#today:hover{
+	background-color: #848484;
+    color: #FFF;
+}
+.sidebar>#calendar_wrap>#wp-calendar>tbody>tr>td.pad:hover{
+	background-color: #FFF;
+    color: #000;
+}
+.sidebar>#calendar_wrap>#wp-calendar>tbody>tr>td:hover>a{
+	background-color: #848484;
+    color: #FFF;
+}
+.sidebar>#calendar_wrap>#wp-calendar>caption{
+	font-size: 1.25rem;
+    padding-bottom: 6px;
+}
 /*
 	留言用的
-	>留言中的回覆
+	留言中的回覆
 */
 .children .ts.comments{
 	margin-left: 30px;
 }
 /*
 	卷軸樣式
-	>很棒棒的卷軸這樣，還會影響到 NAV
+	很棒棒的卷軸這樣，還會影響到 NAV
 */
 ::-webkit-scrollbar-track{
 	background-color: #F5F5F5;
@@ -105,14 +130,14 @@ post img{
 }
 /*
 	NAV FIX
-	>修正卷軸消失的問題
+	修正卷軸消失的問題
 */
 .navfix{
 	overflow-x: auto;
 }
 /*
     選單樣式
-	>因為  Tocas UI 的格式不能直接套到 NAV 但是又不想直接用 JQ 只好這樣啦
+	因為  Tocas UI 的格式不能直接套到 NAV 但是又不想直接用 JQ 只好這樣啦
 */
 #footermenu > li > a,
 #headermenu > li > a{
