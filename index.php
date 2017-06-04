@@ -17,7 +17,7 @@
         		<div class="header"><?php the_title(); ?></div>
        			<div class="meta">
             		<div><?php the_time('Y/n/j') ?> </div>
-					<div><?php comments_popup_link('還沒有人留言', '1 則留言', '% 則留言', '', '已關閉留言'); ?></div>
+					<div><?php comments_number('還沒有人留言', '1 則留言', '% 則留言'); ?></div>
 					<div>@<?php the_author() ;?></div>
         		</div>
 				<div class="description">
