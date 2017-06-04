@@ -28,6 +28,8 @@
 				版權所有 © <?php bloginfo('name'); ?>
 				<br>
 				由好棒棒的 <a title="WordPress" href="//wordpress.org/">WordPress</a> 在背後撐腰
+				<br>
+				載入時間：<?php timer_stop(1); ?> 秒
 			</div>
 		</footer>
 		<?php wp_footer(); ?>
