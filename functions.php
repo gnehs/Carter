@@ -78,9 +78,8 @@ register_sidebar(array(
 */
 register_nav_menus( 
 	array('headernav' => __( '頁首選單'),
-		  'footernav' => __( '頁尾選單'),
-	
-	) 
+		  'footernav' => __( '頁尾選單')
+         ) 
 );
 
 /*
