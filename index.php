@@ -10,7 +10,7 @@
 				<?php if ( has_post_thumbnail() ) { ?>  
 					<?php the_post_thumbnail(); ?>
 				<?php } else {?>  
-					<script src="//raw.githubusercontent.com/gnehs/RandomPic/master/randompicture.js"></script>  
+					<script src="//rawgit.com/gnehs/RandomPic/master/randompicture.js"></script>  
 				<?php } ?> 
 			</a>
 			<div class="content">

@@ -47,7 +47,7 @@
 		<header class="ts fluid horizontally fitted padded heading slate">
 			
 			<div class="image">
-					<script src="//raw.githubusercontent.com/gnehs/RandomPic/master/randompicture.js"></script>  
+					<script src="//rawgit.com/gnehs/RandomPic/master/randompicture.js"></script>  
 			</div>
 			<div class="ts narrow container" style="text-shadow: 0 0 6px black;">
 				<h1 class="ts left aligned inverted header">
