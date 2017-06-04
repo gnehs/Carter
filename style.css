@@ -1,0 +1,117 @@
+﻿/*
+Theme Name: 卡特
+Theme URL: https://github.com/gnehs/Carter
+Description: 卡特，使用好棒棒的 Tocas UI 開發，有 Bug 請到 GitHub 找 @gnehs
+Author: 棒棒勝
+Author URI: https://github.com/gnehs/Carter
+Version: 1.4
+*/
+*{font-style: normal;}
+/*
+	文章內頁標題用的CSS
+*/
+.post .image{
+	opacity: 0.8;
+}
+.post{
+    background-color: #000 !important;
+}
+.post .description > a{
+	color: #ffffff;
+}
+/*
+	文章內頁圖片修正
+*/
+post img{
+	height:auto !important;
+	max-width:100%;
+}
+/*
+	Sidebar用的CSS
+	>Wordpress 的清單
+*/
+.sidebar > ul > li > a {
+	cursor: pointer;
+	background: transparent;
+	padding: 0.5em 0.5em;
+	color: rgba(0, 0, 0, 0.4);
+	margin: 0em;
+	border-radius: 0.28571rem;
+	display: flex;
+    flex-wrap: wrap;
+    table-layout: fixed;
+    list-style-type: none;
+    list-style-position: outside;
+    line-height: 1.14286em;
+	padding: .5em .5em;
+}
+
+.sidebar > ul > li > a:last-child  {
+	margin-bottom: 0em; 
+}
+
+.sidebar > ul > li > a:hover {
+	background: rgba(0, 0, 0, 0.03);
+	color: rgba(0, 0, 0, 0.8); 
+}
+
+.sidebar > ul > li > a:active  {
+	background: rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, 0.9); 
+}
+/*
+	留言用的
+	>留言中的回覆
+*/
+.children .ts.comments{
+	margin-left: 30px;
+}
+/*
+	卷軸樣式
+	>很棒棒的卷軸這樣，還會影響到 NAV
+*/
+::-webkit-scrollbar-track{
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar{
+	width: 5px;
+	height: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb{
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+/*
+	NAV FIX
+	>修正卷軸消失的問題
+*/
+.navfix{
+	overflow-x: auto;
+}
+/*
+    選單樣式
+	>因為  Tocas UI 的格式不能直接套到 NAV 但是又不想直接用 JQ 只好這樣啦
+*/
+#footermenu > li > a,
+#headermenu > li > a{
+  position: relative;
+  vertical-align: middle;
+  line-height: 1.2;
+  padding: 0.92857em 1.14286em;
+  text-decoration: none;
+  color: #646464;
+  white-space: nowrap;
+}
+#footermenu > li > a:hover,
+#headermenu > li > a:hover{
+    color: #9f9f9f;
+	background-color: rgba(0,0,0,.05);
+}
+#footermenu > li > a:active,
+#headermenu > li > a:active{
+    color: #626262; 
+	background-color: rgba(0,0,0,.15);
+}
