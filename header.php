@@ -48,6 +48,7 @@
 					<script src="//rawgit.com/gnehs/RandomPic/master/randompicture.js"></script>  
 			</div>
 			<div class="ts narrow container" style="text-shadow: 0 0 6px black;">
+				<a href="<?php echo home_url ( ) ; ?>">
 				<h1 class="ts left aligned inverted header">
             		<?php bloginfo('name'); ?>
             		<br> 
@@ -55,6 +56,7 @@
             			<?php bloginfo('description'); ?>
         			</small>
 				</h1>
+				</a>
 			</div>  
 		</header>
 		<nav class="ts basic fluid menu">
