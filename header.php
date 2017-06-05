@@ -32,7 +32,6 @@
 		<script>
 		$(function(){
 			$(".click.load").click(function(){$(this).addClass("loading");}) //按下 .click.load 的按鈕，切換按鈕成讀取狀態
-			$(".post.operation>.post-edit-link").addClass("ts labeled icon button click load"); //幫首頁的編輯按鈕加 class (登入狀態)
 		});
 		</script>
 		<!-- /Script -->
