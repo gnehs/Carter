@@ -44,8 +44,12 @@
 	<body>
 		<header class="ts fluid horizontally fitted padded heading slate">
 			
-			<div class="image">
+			<div class="image"> 
+				<?php if ( has_header_image() ) { ?>  
+					<img src="<?php header_image(); ?>">  
+				<?php } else {?>  
 					<script src="//rawgit.com/gnehs/RandomPic/master/randompicture.js"></script>  
+				<?php } ?>
 			</div>
 			<div class="ts narrow container" style="text-shadow: 0 0 6px black;">
 				<a href="<?php echo home_url ( ) ; ?>">

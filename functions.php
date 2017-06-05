@@ -1,10 +1,29 @@
 <?php
 /*
-	特色圖片支持!
+	特色圖片支持！
 */
 	add_theme_support( 'post-thumbnails' )
 ?>
-
+<?php
+/*
+    頁首圖片支持！
+*/
+$defaults = array(
+	'default-image'          => '',
+	'width'                  => 1800,
+	'height'                 => 500,
+	'flex-height'            => false,
+	'flex-width'             => false,
+	'uploads'                => true,
+	'random-default'         => false,
+	'header-text'            => true,
+	'default-text-color'     => '',
+	'wp-head-callback'       => '',
+	'admin-head-callback'    => '',
+	'admin-preview-callback' => '',
+);
+add_theme_support( 'custom-header', $defaults );
+?>
 <?php
 /*
 	留言框架
