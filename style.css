@@ -28,9 +28,12 @@ post img{
 /*
 	Sidebar用的CSS
 	Wordpress 的清單
-	和階層式顯示
+	- 階層式顯示
+	- 自訂選單
 */
 .sidebar > ul > li > a,
+.sidebar > div > ul > li > a,
+.sidebar > div > ul > li > ul > li > a,
 .sidebar > ul > li > ul > li > a  {
 	cursor: pointer;
 	background: transparent;
@@ -46,17 +49,22 @@ post img{
 	padding: .5em .5em;
 }
 
-.sidebar > ul > li > a:last-child  {
+.sidebar > ul > li:last-child,
+.sidebar > div > ul > li:last-child  {
 	margin-bottom: 0em; 
 }
 
 .sidebar > ul > li > a:hover,
+.sidebar > div > ul > li > a:hover,
+.sidebar > div > ul > li > ul > li > a:hover,
 .sidebar > ul > li > ul > li > a:hover {
 	background: rgba(0, 0, 0, 0.03);
 	color: rgba(0, 0, 0, 0.8); 
 }
 
 .sidebar > ul > li > a:active,
+.sidebar > div > ul > li > a:active,
+.sidebar > div > ul > li > ul > li > a:active,
 .sidebar > ul > li > ul > li > a:active  {
 	background: rgba(0, 0, 0, 0.05);
 	color: rgba(0, 0, 0, 0.9); 
