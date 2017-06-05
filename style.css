@@ -28,8 +28,10 @@ post img{
 /*
 	Sidebar用的CSS
 	Wordpress 的清單
+	和階層式顯示
 */
-.sidebar > ul > li > a {
+.sidebar > ul > li > a,
+.sidebar > ul > li > ul > li > a  {
 	cursor: pointer;
 	background: transparent;
 	color: rgba(0, 0, 0, 0.4);
@@ -48,34 +50,13 @@ post img{
 	margin-bottom: 0em; 
 }
 
-.sidebar > ul > li > a:hover {
-	background: rgba(0, 0, 0, 0.03);
-	color: rgba(0, 0, 0, 0.8); 
-}
-
-.sidebar > ul > li > a:active  {
-	background: rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, 0.9); 
-}
-/* 階層式顯示 */
-.sidebar > ul > li > ul > li > a {
-	cursor: pointer;
-	background: transparent;
-	color: rgba(0, 0, 0, 0.4);
-	margin: 0em;
-	border-radius: 0.28571rem;
-	display: flex;
-    flex-wrap: wrap;
-    table-layout: fixed;
-    list-style-type: none;
-    list-style-position: outside;
-    line-height: 1.14286em;
-	padding: .5em 1em;
-}
+.sidebar > ul > li > a:hover,
 .sidebar > ul > li > ul > li > a:hover {
 	background: rgba(0, 0, 0, 0.03);
 	color: rgba(0, 0, 0, 0.8); 
 }
+
+.sidebar > ul > li > a:active,
 .sidebar > ul > li > ul > li > a:active  {
 	background: rgba(0, 0, 0, 0.05);
 	color: rgba(0, 0, 0, 0.9); 
@@ -105,6 +86,12 @@ post img{
 	font-size: 1.25rem;
     padding-bottom: 6px;
 }
+/* 近期迴響 */
+#recentcomments > .recentcomments{
+	line-height: 1.14286em;
+	padding: 5px 3px;
+}
+
 /*
 	留言用的
 	留言中的回覆
