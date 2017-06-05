@@ -1,4 +1,4 @@
-![CocoaPods](https://img.shields.io/cocoapods/l/AFNetworking.svg?style=flat-square) [![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg?style=flat-square)](https://github.com/gnehs/Carter/) [![Github file size](https://img.shields.io/github/size/webcaetano/craft/build/craft.min.js.svg?style=flat-square)](https://github.com/gnehs/Carter)
+
 ![](https://github.com/gnehs/Carter/blob/master/screenshot.png?raw=true)
 卡特，一個拿 Tocas UI 做出來的 Wordpress 主題
 
