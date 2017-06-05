@@ -19,7 +19,7 @@
 			<post>
 				<?php the_content(); ?>
 			</post>
-		
+			<div class="ts hidden clearing divider"></div>
 		</div>
 		<?php endif; ?>
 		

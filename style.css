@@ -169,6 +169,17 @@ post img{
     height: auto !important;
 }
 /*
+ 	圖片對齊(置右、置中)
+*/
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.alignright {
+    float: right; 
+}
+/*
     預設的樣式
 */
 p{

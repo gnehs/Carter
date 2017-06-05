@@ -23,7 +23,7 @@
 				<?php the_content(); ?>
 			</post>
 			
-			<div class="ts divider"></div>
+			<div class="ts clearing divider"></div>
 			
 			<?php comments_template(); ?>
 		</div>
