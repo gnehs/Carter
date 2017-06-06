@@ -23,7 +23,7 @@
  				));
 			 ?>
 		</nav>
-		<footer class="ts secondary fluid segment" style="margin-bottom: 0;margin-top: 0;">
+		<footer class="ts fluid slate" style="margin-bottom: 0;margin-top: 0;">
 			<div class="ts narrow container">
 				版權所有 © <?php bloginfo('name'); ?>
 				<br>

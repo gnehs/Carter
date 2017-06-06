@@ -26,75 +26,49 @@ post img{
     margin: 10px;
 }
 /*
-	Sidebar用的CSS
-	Wordpress 的清單
-	- 階層式顯示
-	- 自訂選單
+	Sidebar
+	因為和 Sidebar 起衝突，所以改成 Sidebarowo
 */
-.sidebar > ul > li > a,
-.sidebar > div > ul > li > a,
-.sidebar > div > ul > li > ul > li > a,
-.sidebar > ul > li > ul > li > a  {
-	cursor: pointer;
-	background: transparent;
-	color: rgba(0, 0, 0, 0.4);
-	margin: 0em;
-	border-radius: 0.28571rem;
-	display: flex;
-    flex-wrap: wrap;
-    table-layout: fixed;
-    list-style-type: none;
-    list-style-position: outside;
-    line-height: 1.14286em;
-	padding: .5em .5em;
+.sidebarowo>ul>li>a,
+.sidebarowo>div>ul>li>a,
+.sidebarowo>div>ul>li>ul>li>a,
+.sidebarowo>ul>li>ul>li>a{
+	color: #787878;
 }
-.sidebar > div > ul > li > ul > li > a,
-.sidebar > ul > li > ul > li > a{
-	padding: .5em 1em;
+.sidebarowo>ul>li>a:hover,
+.sidebarowo>div>ul>li>a:hover,
+.sidebarowo>div>ul>li>ul>li>a:hover,
+.sidebarowo>ul>li>ul>li>a:hover{
+    color: #737373;
 }
-
-.sidebar > ul > li:last-child,
-.sidebar > div > ul > li:last-child  {
-	margin-bottom: 0em; 
-}
-
-.sidebar > ul > li > a:hover,
-.sidebar > div > ul > li > a:hover,
-.sidebar > div > ul > li > ul > li > a:hover,
-.sidebar > ul > li > ul > li > a:hover {
-	background: rgba(0, 0, 0, 0.03);
-	color: rgba(0, 0, 0, 0.8); 
-}
-
-.sidebar > ul > li > a:active,
-.sidebar > div > ul > li > a:active,
-.sidebar > div > ul > li > ul > li > a:active,
-.sidebar > ul > li > ul > li > a:active  {
-	background: rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, 0.9); 
+.sidebarowo>ul>li>a:active,
+.sidebarowo>div>ul>li>a:active,
+.sidebarowo>div>ul>li>ul>li>a:active,
+.sidebarowo>ul>li>ul>li>a:active{
+color: #595959;
 }
 /* 月曆 */
-.sidebar>#calendar_wrap>#wp-calendar{
+.sidebarowo>#calendar_wrap>#wp-calendar{
 	width: 100%;
 	text-align: center;
 }
-.sidebar>#calendar_wrap>#wp-calendar>tbody>tr>td#today{
+.sidebarowo>#calendar_wrap>#wp-calendar>tbody>tr>td#today{
 	background-color: #deffb6;
 }
-.sidebar>#calendar_wrap>#wp-calendar>tbody>tr>td:hover,
-.sidebar>#calendar_wrap>#wp-calendar>tbody>tr>td#today:hover{
+.sidebarowo>#calendar_wrap>#wp-calendar>tbody>tr>td:hover,
+.sidebarowo>#calendar_wrap>#wp-calendar>tbody>tr>td#today:hover{
 	background-color: #848484;
     color: #FFF;
 }
-.sidebar>#calendar_wrap>#wp-calendar>tbody>tr>td.pad:hover{
+.sidebarowo>#calendar_wrap>#wp-calendar>tbody>tr>td.pad:hover{
 	background-color: #FFF;
     color: #000;
 }
-.sidebar>#calendar_wrap>#wp-calendar>tbody>tr>td:hover>a{
+.sidebarowo>#calendar_wrap>#wp-calendar>tbody>tr>td:hover>a{
 	background-color: #848484;
     color: #FFF;
 }
-.sidebar>#calendar_wrap>#wp-calendar>caption{
+.sidebarowo>#calendar_wrap>#wp-calendar>caption{
 	font-size: 1.25rem;
     padding-bottom: 6px;
 }
@@ -147,18 +121,18 @@ post img{
   line-height: 1.2;
   padding: 0.92857em 1.14286em;
   text-decoration: none;
-  color: #646464;
+  color: #5a5a5a;
   white-space: nowrap;
 }
 #footermenu > li > a:hover,
 #headermenu > li > a:hover{
-    color: #9f9f9f;
-	background-color: rgba(0,0,0,.05);
+    color: #626262;
+	background: #f0f0f0;
 }
 #footermenu > li > a:active,
 #headermenu > li > a:active{
-    color: #626262; 
-	background-color: rgba(0,0,0,.15);
+	color: #404040;
+	background: #e4e4e4;
 }
 /* 
 	.ts.image fix

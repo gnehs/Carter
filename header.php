@@ -19,7 +19,7 @@
 
 		<!-- CSS -->
 		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen" />
-		<link href="<?php bloginfo('template_url'); ?>/tocas-ui/tocas.min.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="<?php bloginfo('template_url'); ?>/tocas-ui/tocas.css" rel="stylesheet" media="screen" />
 		<!-- /CSS -->
 
 		<!-- RSS -->

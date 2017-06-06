@@ -59,7 +59,7 @@ function aurelius_comment($comment, $args, $depth)
 /*
 	本日更新!
 	<?php update_today();?> 來使用
-	預設在 Sidebar 有套用在最上面
+	預設在 sidebarowo 有套用在最上面
 */         
 function update_today(){
     $args = array('date_query' => array(
@@ -85,7 +85,7 @@ register_sidebar(array(
 'name' => '側邊欄',
 'id' => 'sidebar',
 'description' => '顯示於每個網頁的右方。',
-'before_widget' => '<div class="ts segment sidebar">',
+'before_widget' => '<div class="ts segment sidebarowo">',
 'after_widget' => '</div>',
 'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;">',
 'after_title' => '</h5>'
