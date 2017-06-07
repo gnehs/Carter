@@ -32,6 +32,7 @@
 		<?php endwhile; ?>
 		</div>
 		<!-- Blog Navigation -->
+		<div class="ts clearing hidden divider"></div>
 		<div class="ts fluid buttons">
 			<?php previous_posts_link('<i class="arrow left icon"></i>上一頁'); ?><?php next_posts_link('<i class="arrow right icon"></i>下一頁'); ?>
 		</div>
