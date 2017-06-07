@@ -70,7 +70,7 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
         <label>你的留言</label>
         <textarea id="message comment" name="comment"  tabindex="4"></textarea>
     </div> 
-	<a href="javascript:void(0);" onClick="Javascript:document.forms['commentform'].submit()" class="ts button">留言</a> 
+    <a href="javascript:void(0);" onClick="Javascript:document.forms['commentform'].submit()" class="ts fluid bottom button">留言</a> 
 	<?php comment_id_fields(); ?>
     <?php do_action('comment_form', $post->ID); ?>
 </form>
