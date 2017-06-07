@@ -8,7 +8,7 @@
 /*
 	讓文本小工具可以支援短code
 */
-	dd_filter('widget_text', 'do_shortcode');
+	add_filter('widget_text', 'do_shortcode');
 ?>
 <?php
 /*
