@@ -25,7 +25,19 @@
 
 			<div class="ts clearing divider"></div>
 
+    		<p>分享這篇文章</p>
+    		<a class="ts info large icon button" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>"><i class="icon facebook f"></i></a>
+    		<a class="ts info large icon button" href="https://telegram.me/share/url?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="icon telegram"></i></a>
+    		<a class="ts info large icon button" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"><i class="icon tumblr"></i></a>
+    		<a class="ts info large icon button" href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>"><i class="icon twitter"></i></a>
+    		<a class="ts info large icon button" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><i class="icon google plus"></i></a>
+			
+			<div class="ts clearing divider"></div>
+
 			<?php comments_template(); ?>
+
+			<div class="ts clearing divider"></div>
+			
 		</div>
 		<?php endif; ?>
 		
