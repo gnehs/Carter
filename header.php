@@ -48,7 +48,7 @@
 				<?php if ( has_header_image() ) { ?>  
 					<img src="<?php header_image(); ?>">  
 				<?php } else {?>  
-					<script src="//rawgit.com/gnehs/RandomPic/master/randompicture.js"></script>  
+					<script src="//gnehs.github.io/RandomPic/randompicture.js"></script>  
 				<?php } ?>
 			</div>
 			<div class="ts narrow container" style="text-shadow: 0 0 6px black;">
