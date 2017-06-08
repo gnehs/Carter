@@ -35,7 +35,7 @@
 		<span class="header">搜尋結果</span>
 		<span class="description">找不到你要的文章，要不要換個關鍵字看看?</span>
 		<div class="action">
-			<a class="ts primary button" title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">回去首頁</a>
+			<a class="ts primary button" title="<?php bloginfo('name'); ?>"  href="<?php echo home_url(); ?>/">回去首頁</a>
 		</div>
 	</div>
 </div>
