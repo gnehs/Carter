@@ -18,8 +18,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- CSS -->
+		<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.css" rel="stylesheet" media="screen" />
 		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen" />
-		<link href="<?php bloginfo('template_url'); ?>/tocas-ui/tocas.css" rel="stylesheet" media="screen" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<!-- /CSS -->
 
 		<!-- RSS -->
@@ -39,9 +40,7 @@
 		<?php wp_head(); ?>
 	</head>
 	
-	<?php flush(); ?>
-	
-	<body>
+	<body  <?php body_class( $class ); ?>>
 		<header class="ts fluid horizontally fitted padded heading slate">
 			
 			<div class="image"> 

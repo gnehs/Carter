@@ -86,16 +86,17 @@ function update_today(){
 /*
 	側邊欄
 */
-if ( function_exists('register_sidebar') ){
-register_sidebar(array(
-'name' => '側邊欄',
-'id' => 'sidebar',
-'description' => '顯示於每個網頁的右方。',
-'before_widget' => '<div class="ts segment sidebarowo">',
-'after_widget' => '</div>',
-'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;">',
-'after_title' => '</h5>'
-));
+add_action( 'widgets_init', 'register_Right_sidebar' );
+function register_Right_sidebar() {
+    register_sidebar( array(
+       	'name' => '側邊欄',
+		'id' => 'sidebar',
+		'description' => '顯示於每個網頁的右方。',
+		'before_widget' => '<div class="ts segment sidebarowo">',
+		'after_widget' => '</div>',
+		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;">',
+		'after_title' => '</h5>'
+    ) );
 }
 
 /*
