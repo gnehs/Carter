@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<!-- Column 1 /Content -->
-	<div class="ts narrow container" style="padding-top: 20px;"><div class="ts stackable grid">
+	<div id="content" class="ts narrow container" style="padding-top: 20px;"><div class="ts stackable grid">
 		<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
 		<div class="twelve wide column">
 			<div class="ts vertically very padded left aligned slate post">
