@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="ts narrow container" style="padding-top: 20px;"><div class="ts stackable grid">
+<div id="content" class="ts narrow container" style="padding-top: 20px;"><div class="ts stackable grid">
     <div class="twelve wide column">
 		<!-- Blog Post -->
 		<div class="ts two stackable waterfall cards">
