@@ -7,6 +7,12 @@ Author URI: https://github.com/gnehs/Carter
 Version: 1.5.5
 Tags:  two-columns, right-sidebar,custom-header, custom-menu, featured-images
 */
+/*
+	對預設樣式載入並加入字體
+	英文字體：
+	Raleway
+	https://fonts.google.com/specimen/Raleway
+*/
 *{
 	font-style: normal;
 	font-family: 'Raleway',-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
