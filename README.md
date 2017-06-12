@@ -3,7 +3,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/gnehs/Carter.svg?style=flat-square)](https://github.com/gnehs/Carter/stargazers) 
 [![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg?style=flat-square)](https://raw.githubusercontent.com/gnehs/Carter/master/LICENSE)
 # 卡特
-一個拿 Tocas UI 做出來的 Wordpress 主題
 <img src="https://github.com/gnehs/Carter/blob/master/screenshot.png?raw=true">
 
 ## 提醒
@@ -16,4 +15,7 @@
 ## 翻譯
 - 翻譯文件在  /languages/  
 - 翻譯完成後歡迎推 PR 回來(##
+## 支援的語言
+- 繁體中文
+- 簡體中文
 
