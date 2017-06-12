@@ -1,0 +1,180 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Carter\n"
+"POT-Creation-Date: 2017-06-12 10:56+0800\n"
+"PO-Revision-Date: 2017-06-12 10:55+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:6
+msgid "哎呀，看來出了點問題"
+msgstr ""
+
+#: 404.php:7
+msgid "😱夭壽喔，我們伺服器查不到這個頁面"
+msgstr ""
+
+#: 404.php:9
+msgid "回去首頁"
+msgstr ""
+
+#: comments.php:11 comments.php:18 comments.php:25 comments.php:70
+#: comments.php:73
+msgid "留言"
+msgstr ""
+
+#: comments.php:12
+msgid "請先登入。"
+msgstr ""
+
+#: comments.php:19
+msgid "留言功能已關閉!😢"
+msgstr ""
+
+#: comments.php:26
+msgid "還沒有留言，來插根頭香吧!🌚👏👏"
+msgstr ""
+
+#: comments.php:38
+msgid "登入來留言"
+msgstr ""
+
+#: comments.php:47 comments.php:65
+msgid "名稱"
+msgstr ""
+
+#: comments.php:49
+msgid "若非必要，請勿填寫真實姓名"
+msgstr ""
+
+#: comments.php:52
+msgid "電子郵件"
+msgstr ""
+
+#: comments.php:54
+msgid "這不會被公開"
+msgstr ""
+
+#: comments.php:57
+msgid "網址"
+msgstr ""
+
+#: comments.php:59
+msgid "選填"
+msgstr ""
+
+#: footer.php:28
+msgid "版權所有 © "
+msgstr ""
+
+#: footer.php:30
+msgid "由好棒棒的"
+msgstr ""
+
+#: footer.php:30
+msgid "在背後撐腰"
+msgstr ""
+
+#: footer.php:32
+msgid "載入時間"
+msgstr ""
+
+#: footer.php:32
+msgid "秒"
+msgstr ""
+
+#: functions.php:46
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: functions.php:105
+msgid "頁首選單"
+msgstr ""
+
+#: functions.php:106
+msgid "頁尾選單"
+msgstr ""
+
+#: index.php:20 search.php:19 single.php:16
+msgid "還沒有人留言"
+msgstr ""
+
+#: index.php:20 search.php:19 single.php:16
+msgid "1 則留言"
+msgstr ""
+
+#: index.php:20 search.php:19 single.php:16
+msgid "% 則留言"
+msgstr ""
+
+#: index.php:28 search.php:27
+msgid "繼續閱讀"
+msgstr ""
+
+#: index.php:29 page.php:15 search.php:28 single.php:17
+msgid "編輯"
+msgstr ""
+
+#: index.php:37
+msgid "上一頁"
+msgstr ""
+
+#: index.php:38
+msgid "下一頁"
+msgstr ""
+
+#: search.php:36
+msgid "搜尋結果"
+msgstr ""
+
+#: search.php:37
+msgid "找不到你要的文章，要不要換個關鍵字看看?"
+msgstr ""
+
+#: search.php:39
+msgid "回首頁"
+msgstr ""
+
+#: searchform.php:3
+msgid "搜尋"
+msgstr ""
+
+#: single.php:16
+msgid "已關閉留言"
+msgstr ""
+
+#: single.php:28
+msgid "分享"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Carter"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "卡特，使用好棒棒的 Tocas UI 開發，有 Bug 請到 GitHub 找 @gnehs"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "棒棒勝"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/gnehs/Carter"
+msgstr ""
