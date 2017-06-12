@@ -1,19 +1,19 @@
 <?php
 /*
-   翻譯支持
-   * Translations can be filed in the /languages/ directory.
-   */
+   Translations
+   Translations can be filed in the /languages/ directory.
+*/
   load_theme_textdomain( 'Carter', get_template_directory() . '/languages' );
 /*
-	特色圖片支持！
+	support featured image
 */
 	add_theme_support( 'post-thumbnails' );
 /*
-	讓文本小工具可以支援短code
+	widget support shortcode
 */
 	add_filter('widget_text', 'do_shortcode');
 /*
-    頁首圖片支持！
+    custom-header
 */
 $defaults = array(
 	'default-image'          => '',
@@ -31,7 +31,7 @@ $defaults = array(
 );
 add_theme_support( 'custom-header', $defaults );
 /*
-	留言框架
+	comments
 */
 function aurelius_comment($comment, $args, $depth) 
 {
@@ -62,9 +62,7 @@ function aurelius_comment($comment, $args, $depth)
 
 <?php
 /*
-	本日更新!
-	<?php update_today();?> 來使用
-	預設在 sidebarowo 有套用在最上面
+	<?php update_today();?>
 */         
 function update_today(){
     $args = array('date_query' => array(
@@ -83,7 +81,7 @@ function update_today(){
 }
 
 /*
-	側邊欄
+	sidebar
 */
 add_action( 'widgets_init', 'register_Right_sidebar' );
 function register_Right_sidebar() {
@@ -99,7 +97,7 @@ function register_Right_sidebar() {
 }
 
 /*
-	註冊選單
+	register menus
 */
 register_nav_menus( 
 	array('headernav' => __( '頁首選單', 'Carter' ),
@@ -108,7 +106,7 @@ register_nav_menus(
 );
 
 /*
-	切頁連結加class
+	add class to "next_posts_link_attributes" & "previous_posts_link_attributes"
 */
 add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes_previous');
@@ -121,7 +119,7 @@ function posts_link_attributes_previous() {
 
 
 /*
-	登入介面美化
+	gnehs_login_css
 */
 function gnehs_login_css() {
     echo '<style type="text/css">
