@@ -2,15 +2,11 @@
 /*
 	特色圖片支持！
 */
-	add_theme_support( 'post-thumbnails' )
-?>
-<?php
+	add_theme_support( 'post-thumbnails' );
 /*
 	讓文本小工具可以支援短code
 */
 	add_filter('widget_text', 'do_shortcode');
-?>
-<?php
 /*
     頁首圖片支持！
 */
@@ -29,8 +25,6 @@ $defaults = array(
 	'admin-preview-callback' => '',
 );
 add_theme_support( 'custom-header', $defaults );
-?>
-<?php
 /*
 	留言框架
 */
