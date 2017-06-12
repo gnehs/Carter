@@ -12,7 +12,7 @@
 					<?php } ?> 
 				</div>
 				<span class="header"><?php the_title(); ?></span>
-				<span class="description"><?php the_time('Y年n月j日') ?> <a><?php edit_post_link('編輯', ''); ?></a></span>
+				<span class="description"><?php the_time('Y/n/j') ?>  <a><?php edit_post_link( __( '編輯', 'Carter' ), ''); ?></a></span>
 			</div>
 			
 			<div class="ts hidden divider"></div>

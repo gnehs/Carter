@@ -3,10 +3,10 @@
 <div class="ts narrow container" style="padding-top: 20px;"><div class="ts stackable grid">
     <div class="twelve wide column">
 		<div class="ts large heading slate">
-			<span class="header">哎呀，看來出了點問題</span>
-			<span class="description">😱夭壽喔，我們伺服器查不到這個頁面</span>
+			<span class="header"><?php esc_html_e( '哎呀，看來出了點問題', 'Carter' ); ?></span>
+			<span class="description"><?php esc_html_e( '😱夭壽喔，我們伺服器查不到這個頁面', 'Carter' ); ?></span>
 			<div class="action">
-				<a class="ts primary button" title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">回去首頁</a>
+				<a class="ts primary button" title="<?php bloginfo('name'); ?>"  href="<?php echo home_url();  ?>"><?php esc_html_e( '回去首頁', 'Carter' ); ?></a>
 			</div>
 		</div>
 	</div>

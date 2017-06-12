@@ -23,11 +23,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<!-- /CSS -->
 
-		<!-- RSS -->
-		<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - 所有文章" href="<?php echo get_bloginfo('rss2_url'); ?>">
-		<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - 所有留言" href="<?php bloginfo('comments_rss2_url'); ?>">
-		<!-- /RSS -->
-
 		<!-- Script -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>

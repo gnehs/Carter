@@ -1,5 +1,10 @@
 <?php
 /*
+   翻譯支持
+   * Translations can be filed in the /languages/ directory.
+   */
+  load_theme_textdomain( 'Carter', get_template_directory() . '/languages' );
+/*
 	特色圖片支持！
 */
 	add_theme_support( 'post-thumbnails' );

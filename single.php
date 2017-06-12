@@ -13,8 +13,8 @@
 				</div>
 				<span class="header"><?php the_title(); ?></span>
 				<span class="description"><?php the_time('Y/n/j') ?> 
-										  <?php comments_popup_link('還沒有人留言', '1 則留言', '% 則留言', '', '已關閉留言'); ?>
-										  <?php edit_post_link('編輯', ''); ?></span>
+										  <?php comments_popup_link(__( '還沒有人留言', 'Carter' ), __( '1 則留言', 'Carter' ),__( '% 則留言', 'Carter' ), '',__( '已關閉留言', 'Carter' )); ?>
+										  <?php edit_post_link(__( '編輯', 'Carter' ), ''); ?></span>
 			</div>
 			
 			<div class="ts hidden divider"></div>
@@ -25,7 +25,7 @@
 
 			<div class="ts clearing divider"></div>
 
-    		<p>分享這篇文章</p>
+    		<p><?php esc_html_e( '分享', 'Carter' ); ?></p>
     		<a class="ts info large icon button" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>"><i class="icon facebook f"></i></a>
     		<a class="ts info large icon button" href="https://telegram.me/share/url?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="icon telegram"></i></a>
     		<a class="ts info large icon button" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"><i class="icon tumblr"></i></a>

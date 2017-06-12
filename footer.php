@@ -25,11 +25,11 @@
 		</nav>
 		<footer class="ts fluid slate" style="margin-bottom: 0;margin-top: 0;">
 			<div class="ts narrow container">
-				版權所有 © <?php bloginfo('name'); ?>
+				<?php esc_html_e( '版權所有 © ', 'Carter' ); ?><?php bloginfo('name'); ?>
 				<br>
-				由好棒棒的 <a title="WordPress" href="//wordpress.org/">WordPress</a> 在背後撐腰
+				<?php esc_html_e( '由好棒棒的', 'Carter' ); ?> <a title="WordPress" href="//wordpress.org/">WordPress</a> <?php esc_html_e( '在背後撐腰', 'Carter' ); ?>
 				<br>
-				載入時間：<?php timer_stop(1); ?> 秒
+				<?php esc_html_e( '載入時間', 'Carter' ); ?>：<?php timer_stop(1); ?> <?php esc_html_e( '秒', 'Carter' ); ?>
 			</div>
 		</footer>
 		<?php wp_footer(); ?>
