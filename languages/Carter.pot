@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Carter\n"
-"POT-Creation-Date: 2017-06-12 10:56+0800\n"
-"PO-Revision-Date: 2017-06-12 10:55+0800\n"
+"POT-Creation-Date: 2017-06-12 11:53+0800\n"
+"PO-Revision-Date: 2017-06-12 11:52+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -103,6 +103,34 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
+#: functions.php:55
+msgid "回復"
+msgstr ""
+
+#: functions.php:56
+msgid "修改"
+msgstr ""
+
+#: functions.php:79
+msgid "本日更新"
+msgstr ""
+
+#: functions.php:79
+msgid " 個項目，"
+msgstr ""
+
+#: functions.php:79 index.php:28 search.php:27
+msgid "繼續閱讀"
+msgstr ""
+
+#: functions.php:91
+msgid "側邊欄"
+msgstr ""
+
+#: functions.php:93
+msgid "顯示於每個網頁的右方。"
+msgstr ""
+
 #: functions.php:105
 msgid "頁首選單"
 msgstr ""
@@ -121,10 +149,6 @@ msgstr ""
 
 #: index.php:20 search.php:19 single.php:16
 msgid "% 則留言"
-msgstr ""
-
-#: index.php:28 search.php:27
-msgid "繼續閱讀"
 msgstr ""
 
 #: index.php:29 page.php:15 search.php:28 single.php:17
