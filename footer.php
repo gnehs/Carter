@@ -25,11 +25,11 @@
 		</nav>
 		<footer class="ts fluid slate" style="margin-bottom: 0;margin-top: 0;">
 			<div class="ts narrow container">
-				<?php esc_html_e( '版權所有 © ', 'Carter' ); ?><?php bloginfo('name'); ?>
+				<?php esc_html_e( 'Copyright © ', 'Carter' ); ?><?php bloginfo('name'); ?>
 				<br>
-				<?php esc_html_e( '由好棒棒的', 'Carter' ); ?> <a title="WordPress" href="//wordpress.org/">WordPress</a> <?php esc_html_e( '在背後撐腰', 'Carter' ); ?>
+				<?php esc_html_e( 'Powered by', 'Carter' ); ?> <a title="WordPress" href="//wordpress.org/">WordPress</a>
 				<br>
-				<?php esc_html_e( '載入時間', 'Carter' ); ?>：<?php timer_stop(1); ?> <?php esc_html_e( '秒', 'Carter' ); ?>
+				<?php esc_html_e( 'Loading time', 'Carter' ); ?>：<?php timer_stop(1); ?> <?php esc_html_e( 's', 'Carter' ); ?>
 			</div>
 		</footer>
 		<?php wp_footer(); ?>

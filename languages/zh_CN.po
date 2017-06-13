@@ -1,190 +1,180 @@
 msgid ""
 msgstr ""
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Project-Id-Version: Carter\n"
-"POT-Creation-Date: 2017-06-12 11:53+0800\n"
-"PO-Revision-Date: 2017-06-12 11:56+0800\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2017-06-13 10:12+0800\n"
+"PO-Revision-Date: 2017-06-13 10:37+0800\n"
 "Language-Team: \n"
-"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 2.0.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: zh_CN\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: 404.php:6
-msgid "哎呀，看來出了點問題"
-msgstr "哎呀，看来出了点问题"
+msgid "Oh, it seems a problem"
+msgstr "唉呀，看来发生了点错误"
 
 #: 404.php:7
-msgid "😱夭壽喔，我們伺服器查不到這個頁面"
-msgstr "😱天啊，我们服务器查不到这个页面"
+msgid "😱Oops! That page can&rsquo;t be found. "
+msgstr "😱糟糕! 无法找到这个页面.  "
 
 #: 404.php:9
-msgid "回去首頁"
+msgid "Back home"
 msgstr "回首页"
 
 #: comments.php:11 comments.php:18 comments.php:25 comments.php:70
 #: comments.php:73
-msgid "留言"
-msgstr "留言"
+msgid "Leave a comment"
+msgstr "留下留言"
 
-#: comments.php:12
-msgid "請先登入。"
-msgstr "请先登入。"
+#: comments.php:12 comments.php:38
+msgid "Please login first"
+msgstr "请先登入"
 
 #: comments.php:19
-msgid "留言功能已關閉!😢"
-msgstr "留言功能已关闭!😢"
+msgid "Comments are closed 😢"
+msgstr "已关闭留言 😢"
 
 #: comments.php:26
-msgid "還沒有留言，來插根頭香吧!🌚👏👏"
-msgstr "还没有留言，来插根头香吧!🌚👏👏"
-
-#: comments.php:38
-msgid "登入來留言"
-msgstr "登入来留言"
+msgid "Leave a comment!🌚👏👏"
+msgstr "来插头香吧!成为第一个留言的🌚👏👏"
 
 #: comments.php:47 comments.php:65
-msgid "名稱"
+msgid "Name"
 msgstr "名称"
 
 #: comments.php:49
-msgid "若非必要，請勿填寫真實姓名"
-msgstr "若非必要，请勿填写真实姓名"
+msgid "Please do not fill in the real name"
+msgstr "请不要填写真实姓名"
 
 #: comments.php:52
-msgid "電子郵件"
-msgstr "电子邮箱"
+msgid "E-mail"
+msgstr "E-mail"
 
 #: comments.php:54
-msgid "這不會被公開"
-msgstr "这不会被公开"
+msgid "This will not be made public"
+msgstr "这不会公开"
 
 #: comments.php:57
-msgid "網址"
-msgstr "网址"
+msgid "URL"
+msgstr "URL"
 
 #: comments.php:59
-msgid "選填"
+msgid "Optional"
 msgstr "选填"
 
 #: footer.php:28
-msgid "版權所有 © "
-msgstr "版权所有 © "
+msgid "Copyright © "
+msgstr "Copyright © "
 
 #: footer.php:30
-msgid "由好棒棒的"
-msgstr "由高档大气上档次的"
-
-#: footer.php:30
-msgid "在背後撐腰"
-msgstr "在背后撑腰"
+msgid "Powered by"
+msgstr "使用好棒棒的"
 
 #: footer.php:32
-msgid "載入時間"
-msgstr "加载时间"
+msgid "Loading time"
+msgstr "读取时间"
 
 #: footer.php:32
-msgid "秒"
+msgid "s"
 msgstr "秒"
 
-#: functions.php:46
+#: functions.php:47
 #, php-format
 msgid "%s"
 msgstr "%s"
 
-#: functions.php:55
-msgid "回復"
+#: functions.php:56
+msgid "Reply"
 msgstr "回复"
 
-#: functions.php:56
-msgid "修改"
-msgstr "修改"
+#: functions.php:57 index.php:29 page.php:15 search.php:28 single.php:17
+msgid "Edit"
+msgstr "编辑"
 
-#: functions.php:79
-msgid "本日更新"
+#: functions.php:80
+msgid "Updated today"
 msgstr "本日更新"
 
-#: functions.php:79
-msgid " 個項目，"
-msgstr " 个项目，"
+#: functions.php:80
+msgid " item,"
+msgstr " 个项目,"
 
-#: functions.php:79 index.php:28 search.php:27
-msgid "繼續閱讀"
+#: functions.php:80 index.php:28 search.php:27
+msgid "Read More"
 msgstr "继续阅读"
 
-#: functions.php:91
-msgid "側邊欄"
+#: functions.php:92
+msgid "Sidebar"
 msgstr "侧边栏"
 
-#: functions.php:93
-msgid "顯示於每個網頁的右方。"
-msgstr "显示于每个网页的右方。"
-
-#: functions.php:105
-msgid "頁首選單"
-msgstr "页首选单"
+#: functions.php:94
+msgid "Displayed on the right side of each page."
+msgstr "显示在每个页面的右侧"
 
 #: functions.php:106
-msgid "頁尾選單"
+msgid "Top menu"
+msgstr "页首选单"
+
+#: functions.php:107
+msgid "Footer menu"
 msgstr "页尾选单"
 
 #: index.php:20 search.php:19 single.php:16
-msgid "還沒有人留言"
-msgstr "还没有人留言"
+msgid "No one commented"
+msgstr "没有人留言"
 
 #: index.php:20 search.php:19 single.php:16
-msgid "1 則留言"
-msgstr "1 则留言"
+msgid "1 Comment"
+msgstr "1 个留言"
 
 #: index.php:20 search.php:19 single.php:16
-msgid "% 則留言"
-msgstr "% 则留言"
-
-#: index.php:29 page.php:15 search.php:28 single.php:17
-msgid "編輯"
-msgstr "编辑"
+msgid "% Comments"
+msgstr "% 个留言"
 
 #: index.php:37
-msgid "上一頁"
+msgid "Previous page"
 msgstr "上一页"
 
 #: index.php:38
-msgid "下一頁"
+msgid "Next page"
 msgstr "下一页"
 
 #: search.php:36
-msgid "搜尋結果"
-msgstr "搜索结果"
+msgid "Search Results"
+msgstr "搜寻结果"
 
 #: search.php:37
-msgid "找不到你要的文章，要不要換個關鍵字看看?"
-msgstr "找不到你要的文章，要不要换个关键词看看?"
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "抱歉，没有找到您所指定的关键词，或许您可以试试其他关键词"
 
 #: search.php:39
-msgid "回首頁"
-msgstr "回首页"
+msgid "Home"
+msgstr "首页"
 
 #: searchform.php:3
-msgid "搜尋"
-msgstr "搜索"
+msgid "Search"
+msgstr "搜寻"
 
 #: single.php:16
-msgid "已關閉留言"
+msgid "Comments are closed"
 msgstr "已关闭留言"
 
 #: single.php:28
-msgid "分享"
+msgid "Share"
 msgstr "分享"
 
 #. Theme Name of the plugin/theme
@@ -192,8 +182,8 @@ msgid "Carter"
 msgstr "Carter"
 
 #. Description of the plugin/theme
-msgid "卡特，使用好棒棒的 Tocas UI 開發，有 Bug 請到 GitHub 找 @gnehs"
-msgstr "卡特，使用好棒棒的 Tocas UI 开发，有 Bug 请到 GitHub 找 @gnehs"
+msgid "Cater by Gnehs"
+msgstr "Cater 由 棒棒勝 制作"
 
 #. Author of the plugin/theme
 msgid "棒棒勝"

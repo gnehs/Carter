@@ -53,8 +53,8 @@ function aurelius_comment($comment, $args, $depth)
 					<?php comment_text(); ?>
 				</div>
 				<div class="actions">
-					<?php comment_reply_link(array_merge( $args, array('reply_text' => __( '回復', 'Carter' ),'depth' => $depth, 'max_depth' => $args['max_depth']))) ?> 
-					<?php edit_comment_link(__( '修改', 'Carter' )); ?>
+					<?php comment_reply_link(array_merge( $args, array('reply_text' => __( 'Reply', 'Carter' ),'depth' => $depth, 'max_depth' => $args['max_depth']))) ?> 
+					<?php edit_comment_link(__( 'Edit', 'Carter' )); ?>
 				</div>
 			</div>
 		</div>
@@ -77,7 +77,7 @@ function update_today(){
     ),'ignore_sticky_posts' => 1);
     $postslist = get_posts( $args );
     if($postslist){
-        echo '<div class="ts card"><div class="content"><div class="header">'.__( '本日更新', 'Carter' ).'</div><div class="description">'.__( '本日更新', 'Carter' ).' '. count($postslist) .__( ' 個項目，', 'Carter' ). '<a href="' . home_url('/').date('Y/m/d') . '">'.__( '繼續閱讀', 'Carter' ).'</a>。</div></div></div>';
+        echo '<div class="ts card"><div class="content"><div class="header">'.__( 'Updated today', 'Carter' ).'</div><div class="description">'.__( 'Updated today', 'Carter' ).' '. count($postslist) .__( ' item,', 'Carter' ). '<a href="' . home_url('/').date('Y/m/d') . '">'.__( 'Read More', 'Carter' ).'</a>。</div></div></div>';
     }else{
         return false;
     }
@@ -89,9 +89,9 @@ function update_today(){
 add_action( 'widgets_init', 'register_Right_sidebar' );
 function register_Right_sidebar() {
     register_sidebar( array(
-       	'name' => __( '側邊欄', 'Carter' ),
+       	'name' => __( 'Sidebar', 'Carter' ),
 		'id' => 'sidebar',
-		'description' => __( '顯示於每個網頁的右方。', 'Carter' ),
+		'description' => __( 'Displayed on the right side of each page.', 'Carter' ),
 		'before_widget' => '<div class="ts segment sidebarowo">',
 		'after_widget' => '</div>',
 		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;">',
@@ -103,8 +103,8 @@ function register_Right_sidebar() {
 	註冊選單
 */
 register_nav_menus( 
-	array('headernav' => __( '頁首選單', 'Carter' ),
-		  'footernav' => __(  '頁尾選單', 'Carter' )
+	array('headernav' => __( 'Top menu', 'Carter' ),
+		  'footernav' => __(  'Footer menu', 'Carter' )
          ) 
 );
 

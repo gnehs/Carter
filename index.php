@@ -17,7 +17,7 @@
         		<div class="header"><?php the_title(); ?></div>
        			<div class="meta">
             		<div><?php the_time('Y/n/j') ?> </div>
-					<div><?php comments_number(__( '還沒有人留言', 'Carter' ),__( '1 則留言', 'Carter' ),__( '% 則留言', 'Carter' )); ?></div>
+					<div><?php comments_number(__( 'No one commented', 'Carter' ),__( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' )); ?></div>
 					<div>@<?php the_author() ;?></div>
         		</div>
 				<div class="description">
@@ -25,8 +25,8 @@
 				</div>
 			</div>
 			<div class="ts fluid bottom attached buttons post operation">
-				<a class="ts labeled icon button click load" href="<?php the_permalink(); ?>"><i class="unhide icon"></i><?php esc_html_e( '繼續閱讀', 'Carter' ); ?></a>
-				<?php edit_post_link( '<i class="write icon"></i>' . __( '編輯', 'Carter' ), '', '', '','ts labeled icon button click load' ); ?> 
+				<a class="ts labeled icon button click load" href="<?php the_permalink(); ?>"><i class="unhide icon"></i><?php esc_html_e( 'Read More', 'Carter' ); ?></a>
+				<?php edit_post_link( '<i class="write icon"></i>' . __( 'Edit', 'Carter' ), '', '', '','ts labeled icon button click load' ); ?> 
 			</div>
 		</div>
 		<?php endwhile; ?>
@@ -34,8 +34,8 @@
 		<!-- Blog Navigation -->
 		<div class="ts clearing hidden divider"></div>
 		<div class="ts fluid buttons">
-			<?php previous_posts_link('<i class="arrow left icon"></i>'. __( '上一頁', 'Carter' )); ?>
-			<?php next_posts_link('<i class="arrow right icon"></i>'. __( '下一頁', 'Carter' )); ?>
+			<?php previous_posts_link('<i class="arrow left icon"></i>'. __( 'Previous page', 'Carter' )); ?>
+			<?php next_posts_link('<i class="arrow right icon"></i>'. __( 'Next page', 'Carter' )); ?>
 		</div>
 		<?php endif; ?>
 	</div>
