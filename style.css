@@ -28,6 +28,13 @@ Tags:  two-columns, right-sidebar,custom-header, custom-menu, featured-images
 	color: #ffffff;
 }
 /*
+	文章的文字可讀性提升
+*/
+post p,post{
+    font-size: 16px;
+    line-height: 26px;
+}
+/*
 	文章內頁圖片修正及樣式美化
 */
 post img{
