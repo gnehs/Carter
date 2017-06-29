@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Carter\n"
-"POT-Creation-Date: 2017-06-13 10:12+0800\n"
-"PO-Revision-Date: 2017-06-13 10:12+0800\n"
+"POT-Creation-Date: 2017-06-29 11:24+0800\n"
+"PO-Revision-Date: 2017-06-29 11:23+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -33,44 +33,44 @@ msgstr ""
 msgid "Back home"
 msgstr ""
 
-#: comments.php:11 comments.php:18 comments.php:25 comments.php:70
-#: comments.php:73
+#: comments.php:12 comments.php:20 comments.php:27 comments.php:72
+#: comments.php:75
 msgid "Leave a comment"
 msgstr ""
 
-#: comments.php:12 comments.php:38
+#: comments.php:13 comments.php:40
 msgid "Please login first"
 msgstr ""
 
-#: comments.php:19
+#: comments.php:21
 msgid "Comments are closed 😢"
 msgstr ""
 
-#: comments.php:26
+#: comments.php:28
 msgid "Leave a comment!🌚👏👏"
 msgstr ""
 
-#: comments.php:47 comments.php:65
+#: comments.php:49 comments.php:67
 msgid "Name"
 msgstr ""
 
-#: comments.php:49
+#: comments.php:51
 msgid "Please do not fill in the real name"
 msgstr ""
 
-#: comments.php:52
+#: comments.php:54
 msgid "E-mail"
 msgstr ""
 
-#: comments.php:54
+#: comments.php:56
 msgid "This will not be made public"
 msgstr ""
 
-#: comments.php:57
+#: comments.php:59
 msgid "URL"
 msgstr ""
 
-#: comments.php:59
+#: comments.php:61
 msgid "Optional"
 msgstr ""
 
@@ -175,6 +175,10 @@ msgstr ""
 
 #: single.php:28
 msgid "Share"
+msgstr ""
+
+#: single.php:29
+msgid "Share to your friends"
 msgstr ""
 
 #. Theme Name of the plugin/theme

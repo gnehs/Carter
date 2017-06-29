@@ -13,7 +13,7 @@
 				</div>
 				<span class="header"><?php the_title(); ?></span>
 				<span class="description"><?php the_time('Y/n/j') ?> 
-										  <?php comments_popup_link(__( 'No one commented', 'Carter' ), __( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' ), '',__( 'Comments are closed', 'Carter' )); ?>
+										  <?php comments_popup_link(__( 'No one commented', 'Carter' ), __( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' ), '',__( 'Comments are closed', 'Carter' )); ?> 
 										  <?php edit_post_link(__( 'Edit', 'Carter' ), ''); ?></span>
 			</div>
 			<div class="ts hidden divider"></div>
@@ -24,7 +24,10 @@
 
 			<div class="ts clearing divider"></div>
 
-    		<h3><?php esc_html_e( 'Share', 'Carter' ); ?></h3>
+    		<h3 class="ts header">
+				<?php esc_html_e( 'Share', 'Carter' ); ?>
+				<div class="sub header"><?php esc_html_e( 'Share to your friends', 'Carter' ); ?></div>
+			</h3>
 			<div class="ts primary large icon separated buttons">
     			<a class="ts button" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>"><i class="icon facebook f"></i></a>
     			<a class="ts button" href="https://telegram.me/share/url?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="icon telegram"></i></a>
@@ -33,7 +36,6 @@
     			<a class="ts button" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><i class="icon google plus"></i></a>
 			</div>
 			<div class="ts clearing divider"></div>
-			<h3><?php esc_html_e( 'Leave a comment', 'Carter' ); ?></h3>
 			<?php comments_template(); ?>
 
 			<div class="ts clearing hidden divider"></div>

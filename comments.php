@@ -7,24 +7,26 @@
         // if there's a password
         // and it doesn't match the cookie
     ?>
-    <div class="ts message">
-        <div class="header"><?php esc_html_e( 'Leave a comment', 'Carter' ); ?></div>
-        <p><?php esc_html_e( 'Please login first', 'Carter' ); ?></p>
-    </div>
+        
+		<h3 class="ts header">
+            <?php esc_html_e( 'Leave a comment', 'Carter' ); ?>
+            <div class="sub header"><?php esc_html_e( 'Please login first', 'Carter' ); ?></div>
+        </h3>
     <?php 
         } else if ( !comments_open() ) {
     ?>
-    <div class="ts message">
-        <div class="header"><?php esc_html_e( 'Leave a comment', 'Carter' ); ?></div>
-        <p><?php esc_html_e( 'Comments are closed 😢', 'Carter' ); ?></p>
-    </div>
+        
+		<h3 class="ts header">
+            <?php esc_html_e( 'Leave a comment', 'Carter' ); ?>
+            <div class="sub header"><?php esc_html_e( 'Comments are closed 😢', 'Carter' ); ?></div>
+        </h3>
     <?php 
         } else if ( !have_comments() ) { 
     ?>
-    <div class="ts message">
-        <div class="header"><?php esc_html_e( 'Leave a comment', 'Carter' ); ?></div>
-        <p><?php esc_html_e( 'Leave a comment!🌚👏👏', 'Carter' ); ?></p>
-    </div>
+		<h3 class="ts header">
+            <?php esc_html_e( 'Leave a comment', 'Carter' ); ?>
+            <div class="sub header"><?php esc_html_e( 'Leave a comment!🌚👏👏', 'Carter' ); ?></div>
+        </h3>
     <?php 
         } else {
             wp_list_comments('type=comment&callback=aurelius_comment');
