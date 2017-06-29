@@ -3,7 +3,7 @@
 		<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
 		<div class="twelve wide column">
 			
-			<div class="ts vertically very padded left aligned slate post">
+			<div class="ts heading vertically padded slate post">
 				<div class="image">
 					<?php if ( has_post_thumbnail() ) { ?>  
 						<?php the_post_thumbnail(); ?>  
@@ -16,7 +16,6 @@
 										  <?php comments_popup_link(__( 'No one commented', 'Carter' ), __( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' ), '',__( 'Comments are closed', 'Carter' )); ?>
 										  <?php edit_post_link(__( 'Edit', 'Carter' ), ''); ?></span>
 			</div>
-			
 			<div class="ts hidden divider"></div>
 			
 			<post>
@@ -25,18 +24,19 @@
 
 			<div class="ts clearing divider"></div>
 
-    		<p><?php esc_html_e( 'Share', 'Carter' ); ?></p>
-    		<a class="ts info large icon button" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>"><i class="icon facebook f"></i></a>
-    		<a class="ts info large icon button" href="https://telegram.me/share/url?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="icon telegram"></i></a>
-    		<a class="ts info large icon button" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"><i class="icon tumblr"></i></a>
-    		<a class="ts info large icon button" href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>"><i class="icon twitter"></i></a>
-    		<a class="ts info large icon button" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><i class="icon google plus"></i></a>
-			
+    		<h3><?php esc_html_e( 'Share', 'Carter' ); ?></h3>
+			<div class="ts primary large icon separated buttons">
+    			<a class="ts button" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>"><i class="icon facebook f"></i></a>
+    			<a class="ts button" href="https://telegram.me/share/url?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="icon telegram"></i></a>
+    			<a class="ts button" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"><i class="icon tumblr"></i></a>
+    			<a class="ts button" href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>"><i class="icon twitter"></i></a>
+    			<a class="ts button" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><i class="icon google plus"></i></a>
+			</div>
 			<div class="ts clearing divider"></div>
-
+			<h3><?php esc_html_e( 'Leave a comment', 'Carter' ); ?></h3>
 			<?php comments_template(); ?>
 
-			<div class="ts clearing divider"></div>
+			<div class="ts clearing hidden divider"></div>
 			
 		</div>
 		<?php endif; ?>

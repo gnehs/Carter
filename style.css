@@ -21,9 +21,6 @@ Tags:  two-columns, right-sidebar,custom-header, custom-menu, featured-images
 /*
 	文章內頁標題用的CSS
 */
-.post .image{
-	opacity: 0.8;
-}
 .post .description > a{
 	color: #ffffff;
 }
@@ -32,7 +29,7 @@ Tags:  two-columns, right-sidebar,custom-header, custom-menu, featured-images
 */
 post p,post{
     font-size: 16px;
-    line-height: 26px;
+	line-height: 1.8em;
 }
 /*
 	文章內頁圖片修正及樣式美化
