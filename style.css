@@ -170,6 +170,13 @@ img.alignright {
 img.alignleft {
     float: left; 
 }
+/*
+	板岩裡的圖片放大及模糊
+*/
+.ts.slate .image>img {
+    filter: blur(2px);
+    transform: scale(1.1);
+}
 /* =WordPress Core
 -------------------------------------------------------------- */
 
