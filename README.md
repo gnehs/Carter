@@ -6,7 +6,7 @@
 <img src="https://github.com/gnehs/Carter/blob/master/screenshot.png?raw=true">
 
 ## 提醒
-- 目前似乎有無法移除主題的問題，請下載完後自己再利用其他工具解壓後再打包吧
+- 目前似乎有無法移除主題的問題(僅限 Source Code，新版已替各位打包完成)，請下載完後自己再利用其他工具解壓後再打包吧
 - 記得新增選單，不然 NAV 會壞掉 
 ## 使用方法
 - 把它下載下來
