@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <？php language_attributes（）; ？>
+<html>
 	<head>
 		<meta charset="<?php bloginfo('charset');?>" />
 		<title><?php if ( is_home() ) {
@@ -36,8 +36,7 @@
 	</head>
 	
 	<body  <?php body_class( $class ); ?>>
-		<header class="ts fluid horizontally fitted padded heading slate">
-			
+		<div class="ts huge slate">
 			<div class="image"> 
 				<?php if ( has_header_image() ) { ?>  
 					<img src="<?php header_image(); ?>">  
@@ -45,18 +44,13 @@
 					<script src="//gnehs.github.io/RandomPic/randompicture.js"></script>  
 				<?php } ?>
 			</div>
-			<div class="ts narrow container" style="text-shadow: 0 0 6px black;">
+			<div class="ts narrow container">
 				<a href="<?php echo home_url ( ) ; ?>">
-				<h1 class="ts left aligned inverted header">
-            		<?php bloginfo('name'); ?>
-            		<br> 
-					<small class="sub header">
-            			<?php bloginfo('description'); ?>
-        			</small>
-				</h1>
+			 		<span class="header" style="text-align: left;"><?php bloginfo('name'); ?></span>
+			 		<span class="description"><?php bloginfo('description'); ?></span>
 				</a>
 			</div>  
-		</header>
+		</div>
 		<nav class="ts basic fluid menu">
 			<?php wp_nav_menu(
 				array(

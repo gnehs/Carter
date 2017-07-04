@@ -4,7 +4,7 @@
    Translations can be filed in the /languages/ directory.
    翻譯文件在 /languages/
 */
-  load_theme_textdomain( 'Carter', get_template_directory() . '/languages' );
+  	load_theme_textdomain( 'Carter', get_template_directory() . '/languages' );
 /*
 	特色圖片支持！
 */
@@ -86,7 +86,6 @@ function update_today(){
 /*
 	側邊欄
 */
-add_action( 'widgets_init', 'register_Right_sidebar' );
 function register_Right_sidebar() {
     register_sidebar( array(
        	'name' => __( 'Sidebar', 'Carter' ),
@@ -98,6 +97,52 @@ function register_Right_sidebar() {
 		'after_title' => '</h5>'
     ) );
 }
+add_action( 'widgets_init', 'register_Right_sidebar' );
+/*
+	底部欄 1
+*/
+function register_Footer1() {
+    register_sidebar( array(
+       	'name' => __( 'Footer 1', 'Carter' ),
+		'id' => 'footer1',
+		'description' => __( 'Displayed at the bottom of each page.', 'Carter' ),
+		'before_widget' => '<div class="ts segment sidebarowo">',
+		'after_widget' => '</div>',
+		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;">',
+		'after_title' => '</h5>'
+    ) );
+}
+add_action( 'widgets_init', 'register_Footer1' );
+/*
+	底部欄 2
+*/
+function register_Footer2() {
+    register_sidebar( array(
+       	'name' => __( 'Footer 2', 'Carter' ),
+		'id' => 'footer2',
+		'description' => __( 'Displayed at the bottom of each page.', 'Carter' ),
+		'before_widget' => '<div class="ts segment sidebarowo">',
+		'after_widget' => '</div>',
+		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;">',
+		'after_title' => '</h5>'
+    ) );
+}
+add_action( 'widgets_init', 'register_Footer2' );
+/*
+	底部欄 3
+*/
+function register_Footer3() {
+    register_sidebar( array(
+       	'name' => __( 'Footer 3', 'Carter' ),
+		'id' => 'footer3',
+		'description' => __( 'Displayed at the bottom of each page.', 'Carter' ),
+		'before_widget' => '<div class="ts segment sidebarowo">',
+		'after_widget' => '</div>',
+		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;">',
+		'after_title' => '</h5>'
+    ) );
+}
+add_action( 'widgets_init', 'register_Footer3' );
 
 /*
 	註冊選單
