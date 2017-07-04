@@ -63,27 +63,27 @@ post img{
 color: #595959;
 }
 /* 月曆 */
-.sidebarowo>#calendar_wrap>#wp-calendar{
+#wp-calendar{
 	width: 100%;
 	text-align: center;
 }
-.sidebarowo>#calendar_wrap>#wp-calendar>tbody>tr>td#today{
+#wp-calendar>tbody>tr>td#today{
 	background-color: #deffb6;
 }
-.sidebarowo>#calendar_wrap>#wp-calendar>tbody>tr>td:hover,
-.sidebarowo>#calendar_wrap>#wp-calendar>tbody>tr>td#today:hover{
+#wp-calendar>tbody>tr>td:hover,
+#wp-calendar>tbody>tr>td#today:hover{
 	background-color: #848484;
     color: #FFF;
 }
-.sidebarowo>#calendar_wrap>#wp-calendar>tbody>tr>td.pad:hover{
+#wp-calendar>tbody>tr>td.pad:hover{
 	background-color: #FFF;
     color: #000;
 }
-.sidebarowo>#calendar_wrap>#wp-calendar>tbody>tr>td:hover>a{
+#wp-calendar>tbody>tr>td:hover>a{
 	background-color: #848484;
     color: #FFF;
 }
-.sidebarowo>#calendar_wrap>#wp-calendar>caption{
+#wp-calendar>caption{
 	font-size: 1.25rem;
     padding-bottom: 6px;
 }
