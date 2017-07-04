@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Carter\n"
-"POT-Creation-Date: 2017-06-29 11:24+0800\n"
-"PO-Revision-Date: 2017-06-29 11:26+0800\n"
+"POT-Creation-Date: 2017-07-04 21:36+0800\n"
+"PO-Revision-Date: 2017-07-04 21:36+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -74,19 +74,19 @@ msgstr "URL"
 msgid "Optional"
 msgstr "选填"
 
-#: footer.php:28
+#: footer.php:36
 msgid "Copyright © "
 msgstr "Copyright © "
 
-#: footer.php:30
+#: footer.php:38
 msgid "Powered by"
 msgstr "使用好棒棒的"
 
-#: footer.php:32
+#: footer.php:40
 msgid "Loading time"
 msgstr "读取时间"
 
-#: footer.php:32
+#: footer.php:40
 msgid "s"
 msgstr "秒"
 
@@ -115,19 +115,35 @@ msgstr " 个项目,"
 msgid "Read More"
 msgstr "继续阅读"
 
-#: functions.php:92
+#: functions.php:91
 msgid "Sidebar"
 msgstr "侧边栏"
 
-#: functions.php:94
+#: functions.php:93
 msgid "Displayed on the right side of each page."
 msgstr "显示在每个页面的右侧"
 
 #: functions.php:106
+msgid "Footer 1"
+msgstr "页尾选单"
+
+#: functions.php:108 functions.php:123 functions.php:138
+msgid "Displayed at the bottom of each page."
+msgstr "显示在每个页面的底部"
+
+#: functions.php:121
+msgid "Footer 2"
+msgstr "页尾选单"
+
+#: functions.php:136
+msgid "Footer 3"
+msgstr "页尾选单"
+
+#: functions.php:151
 msgid "Top menu"
 msgstr "页首选单"
 
-#: functions.php:107
+#: functions.php:152
 msgid "Footer menu"
 msgstr "页尾选单"
 

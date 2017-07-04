@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Carter\n"
-"POT-Creation-Date: 2017-06-29 11:24+0800\n"
-"PO-Revision-Date: 2017-06-29 11:23+0800\n"
+"POT-Creation-Date: 2017-07-04 21:35+0800\n"
+"PO-Revision-Date: 2017-07-04 21:35+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -74,19 +74,19 @@ msgstr ""
 msgid "Optional"
 msgstr ""
 
-#: footer.php:28
+#: footer.php:36
 msgid "Copyright © "
 msgstr ""
 
-#: footer.php:30
+#: footer.php:38
 msgid "Powered by"
 msgstr ""
 
-#: footer.php:32
+#: footer.php:40
 msgid "Loading time"
 msgstr ""
 
-#: footer.php:32
+#: footer.php:40
 msgid "s"
 msgstr ""
 
@@ -115,19 +115,35 @@ msgstr ""
 msgid "Read More"
 msgstr ""
 
-#: functions.php:92
+#: functions.php:91
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:94
+#: functions.php:93
 msgid "Displayed on the right side of each page."
 msgstr ""
 
 #: functions.php:106
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:108 functions.php:123 functions.php:138
+msgid "Displayed at the bottom of each page."
+msgstr ""
+
+#: functions.php:121
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:136
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:151
 msgid "Top menu"
 msgstr ""
 
-#: functions.php:107
+#: functions.php:152
 msgid "Footer menu"
 msgstr ""
 
