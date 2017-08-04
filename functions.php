@@ -154,14 +154,14 @@ register_nav_menus(
 /*
 	切頁連結加class
 */
-add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
-add_filter('previous_posts_link_attributes', 'posts_link_attributes_previous');
 function posts_link_attributes_next() {
     return 'class="ts primary right labeled icon button click load"';
 }
 function posts_link_attributes_previous() {
     return 'class="ts inverted labeled icon button click load"';
 }
+add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_previous');
 
 
 /*
