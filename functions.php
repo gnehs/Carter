@@ -59,9 +59,7 @@ function aurelius_comment($comment, $args, $depth)
 			</div>
 		</div>
 	</div>
-<?php } ?>
-
-<?php
+<?php } 
 /*
 	本日更新!
 	<?php update_today();?> 來使用
