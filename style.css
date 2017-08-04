@@ -113,8 +113,9 @@ post img {
 	留言中的回覆
 */
 
-.children .ts.comments {
-    margin-left: 30px;
+ul.children,
+ul.children ul.children {
+    margin-left: 20px !important;
 }
 
 
