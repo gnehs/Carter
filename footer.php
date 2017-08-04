@@ -36,8 +36,6 @@
 				<?php esc_html_e( 'Copyright © ', 'Carter' ); ?><?php bloginfo('name'); ?>
 				<br>
 				<?php esc_html_e( 'Powered by', 'Carter' ); ?> <a title="WordPress" href="//wordpress.org/">WordPress</a>
-				<br>
-				<?php esc_html_e( 'Loading time', 'Carter' ); ?>：<?php timer_stop(1); ?> <?php esc_html_e( 's', 'Carter' ); ?>
 			</div>
 		</footer>
 		<?php wp_footer(); ?>
