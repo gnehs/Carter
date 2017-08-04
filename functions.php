@@ -192,4 +192,13 @@ function gnehs_login_css() {
             </style>';
 }
 add_action('login_head', 'gnehs_login_css');
+
+/*
+	餵給編輯器的 CSS
+*/
+function sig_add_editor_styles() {
+    add_editor_style( '/tocas-ui/tocas.css' );
+    add_editor_style( 'editor-style.css' );
+}
+add_action( 'init', 'sig_add_editor_styles' );
 ?>

@@ -1,247 +1,54 @@
-﻿/*
-Theme Name: Carter
-Theme URL: https://github.com/gnehs/Carter
-Description: Cater by Gnehs
-Author: 棒棒勝
-Author URI: https://github.com/gnehs/Carter
-Version: 1.6.1
-License URI: https://github.com/gnehs/Carter/blob/master/LICENSE
-Tags:  two-columns, right-sidebar,custom-header, custom-menu, featured-images
-*/
-/*
-	對預設樣式載入並加入字體
-	英文字體：
-	Raleway
-	https://fonts.google.com/specimen/Raleway
-*/
-*{
-	font-style: normal;
-	font-family: 'Raleway',-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+﻿* {
+    font-style: normal;
+    font-family: -apple-system, "Source Han Sans TC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
-/*
-	文章內頁標題用的CSS
-*/
-.post .description > a{
-	color: #ffffff;
-}
+
+
 /*
 	文章的文字可讀性提升
 */
-post p,post{
+
+p {
     font-size: 16px;
-	line-height: 1.8em;
+    line-height: 1.8em;
 }
+
+
 /*
 	文章內頁圖片修正及樣式美化
 */
-post img{
-	height:auto !important;
-	max-width:100%;
+
+img {
+    max-width: 100%;
     max-width: calc(100% - 20px);
     margin: 10px;
 }
-/*
-	Sidebar
-	因為和 Sidebar 起衝突，所以改成 Sidebarowo
-*/
-.sidebarowo>ul>li>a,
-.sidebarowo>div>ul>li>a,
-.sidebarowo>div>ul>li>ul>li>a,
-.sidebarowo>ul>li>ul>li>a{
-	color: #787878;
-}
-.sidebarowo>ul>li>a:hover,
-.sidebarowo>div>ul>li>a:hover,
-.sidebarowo>div>ul>li>ul>li>a:hover,
-.sidebarowo>ul>li>ul>li>a:hover{
-    color: #737373;
-}
-.sidebarowo>ul>li>a:active,
-.sidebarowo>div>ul>li>a:active,
-.sidebarowo>div>ul>li>ul>li>a:active,
-.sidebarowo>ul>li>ul>li>a:active{
-color: #595959;
-}
-/* 月曆 */
-#wp-calendar{
-	width: 100%;
-	text-align: center;
-}
-#wp-calendar>tbody>tr>td#today{
-	background-color: #deffb6;
-}
-#wp-calendar>tbody>tr>td:hover,
-#wp-calendar>tbody>tr>td#today:hover{
-	background-color: #848484;
-    color: #FFF;
-}
-#wp-calendar>tbody>tr>td.pad:hover{
-	background-color: #FFF;
-    color: #000;
-}
-#wp-calendar>tbody>tr>td:hover>a{
-	background-color: #848484;
-    color: #FFF;
-}
-#wp-calendar>caption{
-	font-size: 1.25rem;
-    padding-bottom: 6px;
-}
-/* 近期迴響 */
-#recentcomments > .recentcomments{
-	line-height: 1.14286em;
-	padding: 5px 3px;
-}
 
-/*
-	留言用的
-	留言中的回覆
-*/
-.children .ts.comments{
-	margin-left: 30px;
-}
-/*
-	卷軸樣式
-	很棒棒的卷軸這樣，還會影響到 NAV
-*/
-::-webkit-scrollbar-track{
-	background-color: #F5F5F5;
-}
 
-::-webkit-scrollbar{
-	width: 5px;
-	height: 5px;
-	background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar-thumb{
-	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
-}
-/*
-	NAV FIX
-	修正卷軸消失的問題
-*/
-.navfix{
-	overflow-x: auto;
-}
-/*
-    選單樣式
-	因為  Tocas UI 的格式不能直接套到 NAV 但是又不想直接用 JQ 只好這樣啦
-*/
-#footermenu > li > a,
-#headermenu > li > a{
-  position: relative;
-  vertical-align: middle;
-  line-height: 1.2;
-  padding: 0.92857em 1.14286em;
-  text-decoration: none;
-  color: #5a5a5a;
-  white-space: nowrap;
-}
-#footermenu > li > a:hover,
-#headermenu > li > a:hover{
-    color: #626262;
-	background: #f0f0f0;
-}
-#footermenu > li > a:active,
-#headermenu > li > a:active{
-	color: #404040;
-	background: #e4e4e4;
-}
-/* 
-	.ts.image fix
-	修正在部分外掛下產生的圖片拉伸問題
-*/
-.ts.card>.image img {
-    height: auto !important;
-}
 /*
  	圖片對齊(置右、置中)
 */
+
 img.aligncenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 img.alignright {
-    float: right; 
+    float: right;
 }
+
 img.alignleft {
-    float: left; 
+    float: left;
 }
+
+
 /*
 	板岩裡的圖片放大及模糊
 */
+
 .ts.slate .image>img {
     filter: blur(2px);
     transform: scale(1.1);
-}
-/* =WordPress Core
--------------------------------------------------------------- */
-
-.wp-caption {
-    background: #fff;
-    border: 1px solid #f0f0f0;
-    max-width: 96%; /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-    text-align: center;
-}
-
-.wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignright {
-    margin: 5px 0 20px 20px;
-}
-
-.wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 98.5%;
-    padding: 0;
-    width: auto;
-}
-
-.wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
-    margin: 0;
-    padding: 0 4px 5px;
-}
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-        white-space: nowrap;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
 }

@@ -48,7 +48,7 @@ post {
 */
 
 post img {
-    height: auto !important;
+    height: auto;
     max-width: 100%;
     max-width: calc(100% - 20px);
     margin: 10px;
