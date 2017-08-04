@@ -178,13 +178,13 @@ ul.children ul.children {
 #footermenu>li>a:hover,
 #headermenu>li>a:hover {
     color: #626262;
-    background: #f0f0f0;
+    background-color: rgba(0, 0, 0, 0.02);
 }
 
 #footermenu>li>a:active,
 #headermenu>li>a:active {
     color: #404040;
-    background: #e4e4e4;
+    background-color: rgba(0, 0, 0, 0.09);
 }
 
 
