@@ -69,8 +69,7 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
 		</div>
     <?php endif; ?>
     <div class="resizable field">
-        <label><?php esc_html_e( 'Leave a comment', 'Carter' ); ?></label>
-        <textarea id="message comment" name="comment"  tabindex="4"></textarea>
+        <textarea id="message comment" name="comment"  tabindex="4" style="max-width: 100%" placeholder="<?php esc_html_e( 'Leave a comment', 'Carter' ); ?>"></textarea>
     </div> 
     <a href="javascript:void(0);" onClick="Javascript:document.forms['commentform'].submit()" class="ts fluid bottom button"><?php esc_html_e( 'Leave a comment', 'Carter' ); ?></a> 
 	<?php comment_id_fields(); ?>
