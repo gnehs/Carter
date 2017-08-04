@@ -21,7 +21,6 @@
 		<!-- CSS -->
 		<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.css" rel="stylesheet" media="screen" />
 		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen" />
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<!-- /CSS -->
 
 		<!-- Script -->
