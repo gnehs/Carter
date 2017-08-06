@@ -1,4 +1,4 @@
-<div class="ts card">
+<div class="ts card perview">
 			<a class="image" href="<?php the_permalink(); ?>">
 				<?php if ( has_post_thumbnail() ) { ?>  
 					<?php the_post_thumbnail(); ?>

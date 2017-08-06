@@ -13,7 +13,7 @@ Version: 1.7.1
 */
 
 body {
-    background: #FFF
+    background: #FFF;
 }
 
 
@@ -224,4 +224,81 @@ img.alignleft {
 .ts.slate .image>img {
     filter: blur(2px);
     transform: scale(1.1);
+}
+
+
+/*
+    Dark Theme
+*/
+
+
+/*留言 表單 板岩*/
+
+.ts.inverted.comments .comment .text,
+.ts.inverted.form .field,
+.ts.inverted.form .field>label,
+.ts.inverted.form .field>small,
+.ts.inverted.form .field>.inputs>small,
+.ts.inverted.slate {
+    color: #fff;
+}
+
+body.inverted {
+    background: #372323;
+}
+
+.ts.inverted.slate,
+.ts.inverted.segment {
+    background: #333;
+}
+
+nav.ts.fluid.menu.inverted a {
+    color: #fff !important;
+}
+
+nav.ts.fluid.menu.inverted a:hover {
+    background: #292929 !important;
+    color: #EFEFEF;
+}
+
+nav.ts.fluid.menu.inverted a:active {
+    background: #1E1E1E !important;
+    color: #D8D8D8 !important;
+}
+
+.ts.inverted.card,
+nav.ts.inverted.menu,
+.ts.inverted.segment,
+.ts.inverted.slate {
+    box-shadow: 0px 1px 2px 0 #282828;
+    border-color: #664747;
+    background: #333;
+}
+
+ul.inverted,
+.inverted li,
+post.inverted p,
+post.inverted {
+    color: #ffffff;
+}
+
+.sidebarowo.inverted>ul>li>a,
+.sidebarowo.inverted>div>ul>li>a,
+.sidebarowo.inverted>div>ul>li>ul>li>a,
+.sidebarowo.inverted>ul>li>ul>li>a {
+    color: #FFF;
+}
+
+.sidebarowo.inverted>ul>li>a:hover,
+.sidebarowo.inverted>div>ul>li>a:hover,
+.sidebarowo.inverted>div>ul>li>ul>li>a:hover,
+.sidebarowo.inverted>ul>li>ul>li>a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebarowo.inverted.inverted>ul>li>a:active,
+.sidebarowo.inverted>div>ul>li>a:active,
+.sidebarowo.inverted>div>ul>li>ul>li>a:active,
+.sidebarowo.inverted>ul>li>ul>li>a:active {
+    color: rgba(255, 255, 255, 0.7);
 }

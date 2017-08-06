@@ -21,11 +21,13 @@
 		<!-- CSS -->
 		<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.css" rel="stylesheet" media="screen" />
 		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen" />
+		<style id="night"></style>
 		<!-- /CSS -->
 
 		<!-- Script -->
-		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.js"></script>
+		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/night-theme.js"></script>
 		<script>
 		$(function(){
 			$(".click.load").click(function(){$(this).addClass("loading");}) //按下 .click.load 的按鈕，切換按鈕成讀取狀態
@@ -38,7 +40,7 @@
 		<!-- /wp_head -->
 	</head>
 	
-	<body  <?php body_class( $class ); ?>>
+	<body  <?php body_class( $class ); ?> style="display:none">
 		<div class="ts huge slate">
 			<div class="image"> 
 				<?php if ( has_header_image() ) { ?>  
@@ -48,7 +50,7 @@
 				<?php } ?>
 			</div>
 			<div class="ts narrow container">
-				<a href="<?php echo home_url ( ) ; ?>">
+				<a href="<?php echo home_url ( ) ; ?>" id="backToHome">
 			 		<span class="header" style="text-align: left;"><?php bloginfo('name'); ?></span>
 			 		<span class="description"><?php bloginfo('description'); ?></span>
 				</a>

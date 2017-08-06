@@ -75,7 +75,7 @@ function update_today(){
     ),'ignore_sticky_posts' => 1);
     $postslist = get_posts( $args );
     if($postslist){
-        echo '<div class="ts card" id="update-today"><div class="content"><div class="header">'.__( 'Updated today', 'Carter' ).'</div><div class="description">'.__( 'Updated today', 'Carter' ).' '. count($postslist) .__( ' item,', 'Carter' ). '<a href="' . home_url('/').date('Y/m/d') . '">'.__( 'Read More', 'Carter' ).'</a>。</div></div></div>';
+        echo '<div class="widget_text ts segment sidebarowo"><h5 class="ts header" style="margin-bottom: 5px;">'.__( 'Updated today', 'Carter' ).'</h5>'.__( 'Updated today', 'Carter' ).' '. count($postslist) .__( ' item,', 'Carter' ). '<a href="' . home_url('/').date('Y/m/d') . '">'.__( 'Read More', 'Carter' ).'</a>。</div>';
     }else{
         return false;
     }
