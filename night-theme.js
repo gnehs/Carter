@@ -20,9 +20,14 @@ function switchToNightTheme() {
     $(".ts.comments").addClass("inverted");
     $("post").addClass("inverted");
     $("body").addClass("inverted");
+    if (owo == "true") {
+        docCookies.setItem("nightmode", "true")
+    }
+    $("#nightmode").html("停用");
+    $("#nightmode").attr("onclick", "switchToDayTheme('true')");
 }
 
-function switchToDayTheme() {
+function switchToDayTheme(owo) {
     console.log("切換至亮色主題");
 
     $("#share").removeClass("inverted");
@@ -44,12 +49,18 @@ function switchToDayTheme() {
     $(".ts.comments").removeClass("inverted");
     $("post").removeClass("inverted");
     $("body").removeClass("inverted");
+    if (owo == "true") {
+        docCookies.setItem("nightmode", "False")
+    }
+    $("#nightmode").html("啟用");
+    $("#nightmode").attr("onclick", "switchToNightTheme('true')");
 }
 
 function nightmode(mode = "true") {
     if (mode == "true") {
         var n = new Date().getHours();
-        if (n > 20 || n < 6) {
+        var nightmode = docCookies.getItem("nightmode")
+        if (n > 20 || n < 6 || nightmode == "true") {
             switchToNightTheme();
         }
     }
