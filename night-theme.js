@@ -59,7 +59,8 @@ function switchToNightTheme(owo) {
     $("post").addClass("inverted");
     $("body").addClass("inverted");
     if (owo == "true") {
-        docCookies.setItem("nightmode", "true")
+        var path4cookie = window.location.host;
+        docCookies.setItem("carternightmode", "true", "Fri, 31 Dec 9999 23:59:59 GMT", path4cookie)
     }
     $("#nightmode").html("停用");
     $("#nightmode").attr("onclick", "switchToDayTheme('true')");
@@ -88,16 +89,18 @@ function switchToDayTheme(owo) {
     $("post").removeClass("inverted");
     $("body").removeClass("inverted");
     if (owo == "true") {
-        docCookies.setItem("nightmode", "False")
+        var path4cookie = window.location.host;
+        docCookies.setItem("carternightmode", "False", "Fri, 31 Dec 9999 23:59:59 GMT", path4cookie)
     }
     $("#nightmode").html("啟用");
+    $("#backToHome").attr("href");
     $("#nightmode").attr("onclick", "switchToNightTheme('true')");
 }
 
 function nightmode(mode = "true") {
     if (mode == "true") {
         var n = new Date().getHours();
-        var nightmode = docCookies.getItem("nightmode")
+        var nightmode = docCookies.getItem("carternightmode")
         if (n > 20 || n < 6 || nightmode == "true") {
             switchToNightTheme();
         }
