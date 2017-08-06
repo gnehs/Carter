@@ -4,7 +4,7 @@ Theme URL: https://github.com/gnehs/Carter
 Description: Cater by Gnehs
 Author: 棒棒勝
 Author URI: https://github.com/gnehs/Carter
-Version: 1.7.0
+Version: 1.7.1
 */
 
 
@@ -104,8 +104,8 @@ post img {
 }
 
 #wp-calendar>caption {
-    font-size: 1.25rem;
-    padding-bottom: 6px;
+    font-size: 1.5rem;
+    padding-bottom: 12px;
 }
 
 
