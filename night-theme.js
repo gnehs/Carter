@@ -45,10 +45,13 @@ function switchToDayTheme() {
     $("post").removeClass("inverted");
     $("body").removeClass("inverted");
 }
-$(function() {
-    var n = new Date().getHours();
-    if (n > 20 || n < 6) {
-        switchToNightTheme()
+
+function nightmode(mode = "true") {
+    if (mode == "true") {
+        var n = new Date().getHours();
+        if (n > 20 || n < 6) {
+            switchToNightTheme();
+        }
     }
     $("body").attr("style", "");
-});
+}
