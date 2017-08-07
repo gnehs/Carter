@@ -97,8 +97,7 @@ function switchToDayTheme(owo) {
     $("#nightmode").attr("onclick", "switchToNightTheme('true')");
 }
 
-function nightmode(mode == true) {
-    // 預設模式
+function nightmode(mode = true) {
     if (mode) {
         var n = new Date().getHours();
         var nightmode = docCookies.getItem("carternightmode")
@@ -106,8 +105,7 @@ function nightmode(mode == true) {
             switchToNightTheme();
         }
     }
-    // 強制啟用
-    if (mode == "enable") {
+    if (mode == "enabled") {
         switchToNightTheme(true);
     }
     $("body").attr("style", "");
