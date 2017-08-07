@@ -278,8 +278,7 @@ nav.ts.inverted.menu,
 
 ul.inverted,
 .inverted li,
-post.inverted *,
-{
+post.inverted * {
     color: #ffffff !important;
 }
 
