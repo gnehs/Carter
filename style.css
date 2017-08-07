@@ -235,6 +235,7 @@ img.alignleft {
 /*留言 表單 板岩*/
 
 .ts.inverted.comments .comment .text,
+.ts.inverted.comments .comment,
 .ts.inverted.form .field,
 .ts.inverted.form .field>label,
 .ts.inverted.form .field>small,
