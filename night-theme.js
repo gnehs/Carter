@@ -90,7 +90,7 @@ function switchToDayTheme(owo) {
     $("body").removeClass("inverted");
     if (owo) {
         var path4cookie = window.location.host;
-        docCookies.setItem("carternightmode", "False", "Fri, 31 Dec 9999 23:59:59 GMT", path4cookie)
+        docCookies.setItem("carternightmode", "false", "Fri, 31 Dec 9999 23:59:59 GMT", path4cookie)
     }
     $("#nightmode").html("啟用");
     $("#backToHome").attr("href");
