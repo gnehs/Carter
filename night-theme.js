@@ -58,7 +58,7 @@ function switchToNightTheme(owo) {
     $(".ts.comments").addClass("inverted");
     $("post").addClass("inverted");
     $("body").addClass("inverted");
-    if (owo == "true") {
+    if (owo) {
         var path4cookie = window.location.host;
         docCookies.setItem("carternightmode", "true", "Fri, 31 Dec 9999 23:59:59 GMT", path4cookie)
     }
@@ -88,7 +88,7 @@ function switchToDayTheme(owo) {
     $(".ts.comments").removeClass("inverted");
     $("post").removeClass("inverted");
     $("body").removeClass("inverted");
-    if (owo == "true") {
+    if (owo) {
         var path4cookie = window.location.host;
         docCookies.setItem("carternightmode", "False", "Fri, 31 Dec 9999 23:59:59 GMT", path4cookie)
     }
@@ -97,13 +97,18 @@ function switchToDayTheme(owo) {
     $("#nightmode").attr("onclick", "switchToNightTheme('true')");
 }
 
-function nightmode(mode = "true") {
-    if (mode == "true") {
+function nightmode(mode == true) {
+    // 預設模式
+    if (mode) {
         var n = new Date().getHours();
         var nightmode = docCookies.getItem("carternightmode")
         if (n > 20 || n < 6 || nightmode == "true") {
             switchToNightTheme();
         }
+    }
+    // 強制啟用
+    if (mode == "enable") {
+        switchToNightTheme(true);
     }
     $("body").attr("style", "");
 }
