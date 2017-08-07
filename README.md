@@ -1,5 +1,5 @@
 # Carter
-<img src="https://github.com/gnehs/Carter/blob/master/screenshot.png?raw=true">
+<img src="https://github.com/gnehs/Carter/blob/master/screenshot.gif?raw=true">
 
 ## 提醒
 - 記得新增選單，不然 NAV 會壞掉 
