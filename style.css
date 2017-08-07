@@ -271,7 +271,7 @@ nav.ts.inverted.menu,
 .ts.inverted.segment,
 .ts.inverted.slate {
     box-shadow: 0px 1px 2px 0 #282828;
-    border-color: #664747;
+    border-color: rgba(0, 0, 0, 0);
     background: #333;
 }
 
