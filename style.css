@@ -278,9 +278,9 @@ nav.ts.inverted.menu,
 
 ul.inverted,
 .inverted li,
-post.inverted p,
-post.inverted {
-    color: #ffffff;
+post.inverted *,
+{
+    color: #ffffff !important;
 }
 
 .sidebarowo.inverted>ul>li>a,
