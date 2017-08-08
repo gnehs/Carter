@@ -23,7 +23,7 @@ function switchToNightTheme(owo) {
     if (owo) {
         window.localStorage["carternightmode"] = "true";
     }
-    $("#nightmode").html("停用");
+    $("#nightmode").html("Off");
     $("#nightmode").attr("onclick", "switchToDayTheme('true')");
 }
 
@@ -52,7 +52,7 @@ function switchToDayTheme(owo) {
     if (owo) {
         window.localStorage["carternightmode"] = "false";
     }
-    $("#nightmode").html("啟用");
+    $("#nightmode").html("On");
     $("#backToHome").attr("href");
     $("#nightmode").attr("onclick", "switchToNightTheme('true')");
 }
