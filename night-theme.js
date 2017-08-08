@@ -8,7 +8,7 @@ function switchToNightTheme(owo) {
     $("nav").addClass("inverted");
 
     $("footer").addClass("inverted");
-    $(".ts.card.perview").addClass("inverted");
+    $(".ts.card").addClass("inverted");
     $(".ts.card.perview>.ts.fluid.bottom.attached").addClass("inverted");
     $(".ts.button").addClass("inverted");
     $(".ts.header").addClass("inverted");
@@ -37,7 +37,7 @@ function switchToDayTheme(owo) {
     $("nav").removeClass("inverted");
 
     $("footer").removeClass("inverted");
-    $(".ts.card.perview").removeClass("inverted");
+    $(".ts.card").removeClass("inverted");
     $(".ts.card.perview>.ts.fluid.bottom.attached").removeClass("inverted");
     $(".ts.button").removeClass("inverted");
     $(".ts.header").removeClass("inverted");
