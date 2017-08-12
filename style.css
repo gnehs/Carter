@@ -49,6 +49,25 @@ post img {
 }
 
 
+/* 
+    文章內頁標籤修正 
+*/
+
+.post .ts.label {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    color: #1c1c1c;
+    text-shadow: 0 0 0px black;
+}
+
+
+/*標籤修正*/
+
+.ts.label {
+    margin: 0em .5em .5em 0em !important;
+}
+
+
 /*
 	Sidebar
 	因為和 Sidebar 起衝突，所以改成 Sidebarowo

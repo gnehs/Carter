@@ -12,9 +12,10 @@
             		<div><?php the_time('Y/n/j') ?> </div>
 					<div><?php comments_number(__( 'No one commented', 'Carter' ),__( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' )); ?></div>
 					<div>@<?php the_author() ;?></div>
-        		</div>
+				</div>
 				<div class="description">
 					<?php the_excerpt(); ?>
+					<?php the_tags( '<div class="ts horizontal basic label">','</div><div class="ts horizontal basic label">' ,'</div>'); ?>
 				</div>
 			</div>
 			<div class="ts fluid bottom attached buttons post operation">
