@@ -7,9 +7,12 @@ function switchToNightTheme(owo) {
     $("nav").removeClass("basic");
     $("nav").addClass("inverted");
 
+    $(".ts.card.perview>.ts.fluid.bottom.attached").addClass("inverted");
+    $(".ts.card.perview>.content>.description>.label").addClass("inverted");
+    $(".ts.card.perview>.content>.description>.label").removeClass("basic");
+
     $("footer").addClass("inverted");
     $(".ts.card").addClass("inverted");
-    $(".ts.card.perview>.ts.fluid.bottom.attached").addClass("inverted");
     $(".ts.button").addClass("inverted");
     $(".ts.header").addClass("inverted");
     $(".ts.fluid.input").addClass("inverted");
@@ -36,9 +39,12 @@ function switchToDayTheme(owo) {
     $("nav").addClass("basic");
     $("nav").removeClass("inverted");
 
+    $(".ts.card.perview>.ts.fluid.bottom.attached").removeClass("inverted");
+    $(".ts.card.perview>.content>.description>.label").removeClass("inverted");
+    $(".ts.card.perview>.content>.description>.label").addClass("basic");
+
     $("footer").removeClass("inverted");
     $(".ts.card").removeClass("inverted");
-    $(".ts.card.perview>.ts.fluid.bottom.attached").removeClass("inverted");
     $(".ts.button").removeClass("inverted");
     $(".ts.header").removeClass("inverted");
     $(".ts.fluid.input").removeClass("inverted");
