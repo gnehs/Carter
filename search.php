@@ -2,7 +2,7 @@
 <div class="ts narrow container" style="padding-top: 20px;"><div class="ts stackable grid">
     
 <?php if ( have_posts() ) : ?>
-<div class="twelve wide column"><div class="ts two stackable waterfall cards">
+<div class="twelve wide column"><div class="ts two stackable cards">
 <?php while ( have_posts() ) : the_post(); ?>
 	<?php get_template_part( 'perview', 'index' ); ?>
 <?php endwhile; ?>
