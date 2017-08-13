@@ -6,13 +6,17 @@
 */
   	load_theme_textdomain( 'Carter', get_template_directory() . '/languages' );
 /*
-	特色圖片支持！
+	特色圖片支持
 */
 	add_theme_support( 'post-thumbnails' );
 /*
-	讓文本小工具可以支援短code
+	讓文本小工具可以支援短 code
 */
 	add_filter('widget_text', 'do_shortcode');
+/*
+	文章格式支援
+*/
+	add_theme_support( 'post-formats', array( 'aside', 'chat','gallery','image','link', 'quote', 'status', 'video', 'audio' ) );
 /*
     頁首圖片支持！
 */
