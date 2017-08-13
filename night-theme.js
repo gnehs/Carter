@@ -70,6 +70,9 @@ function nightmode(mode = true) {
         if (n > 20 || n < 6 || nightmode == "true") {
             switchToNightTheme();
         }
+        if (nightmode == "false") {
+            switchToDayTheme();
+        }
     }
     if (mode == "enabled") {
         switchToNightTheme(true);
