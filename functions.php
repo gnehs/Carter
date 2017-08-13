@@ -14,7 +14,7 @@
 */
 	add_filter('widget_text', 'do_shortcode');
 /*
-	文章格式支援
+	文章格式支援（測試中）
 */
 	add_theme_support( 'post-formats', array( 'aside', 'chat','gallery','image','link', 'quote', 'status', 'video', 'audio' ) );
 /*
