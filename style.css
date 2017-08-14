@@ -4,7 +4,7 @@ Theme URL: https://github.com/gnehs/Carter
 Description: Cater by Gnehs
 Author: 棒棒勝
 Author URI: https://github.com/gnehs/Carter
-Version: 2.1.0
+Version: 2.1.1
 */
 
 
@@ -61,10 +61,12 @@ post img {
 }
 
 
-/*標籤修正*/
+/*
+    標籤修正
+*/
 
 .ts.label {
-    margin: 0em .5em .5em 0em !important;
+    margin: .5em !important;
 }
 
 
@@ -73,25 +75,16 @@ post img {
 	因為和 Sidebar 起衝突，所以改成 Sidebarowo
 */
 
-.sidebarowo>ul>li>a,
-.sidebarowo>div>ul>li>a,
-.sidebarowo>div>ul>li>ul>li>a,
-.sidebarowo>ul>li>ul>li>a {
+.sidebarowo a {
     color: #787878;
 }
 
-.sidebarowo>ul>li>a:hover,
-.sidebarowo>div>ul>li>a:hover,
-.sidebarowo>div>ul>li>ul>li>a:hover,
-.sidebarowo>ul>li>ul>li>a:hover {
-    color: #737373;
+.sidebarowo a:hover {
+    color: #4b4b4b;
 }
 
-.sidebarowo>ul>li>a:active,
-.sidebarowo>div>ul>li>a:active,
-.sidebarowo>div>ul>li>ul>li>a:active,
-.sidebarowo>ul>li>ul>li>a:active {
-    color: #595959;
+.sidebarowo a:active {
+    color: #151010;
 }
 
 
@@ -102,24 +95,35 @@ post img {
     text-align: center;
 }
 
-#wp-calendar>tbody>tr>td#today {
-    background-color: #deffb6;
+#wp-calendar td {
+    border-radius: 3px;
 }
 
-#wp-calendar>tbody>tr>td:hover,
-#wp-calendar>tbody>tr>td#today:hover {
-    background-color: #848484;
+#wp-calendar td#today {
+    background-color: rgba(0, 0, 0, 0.6);
     color: #FFF;
 }
 
-#wp-calendar>tbody>tr>td.pad:hover {
+#wp-calendar td#today a {
+    color: #e4d1fe;
+}
+
+#wp-calendar td:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#wp-calendar a {
+    color: #788df5;
+}
+
+#wp-calendar td.pad:hover {
     background-color: #FFF;
-    color: #000;
+    color: rgba(0, 0, 0, 0.7);
 }
 
-#wp-calendar>tbody>tr>td:hover>a {
-    background-color: #848484;
-    color: #FFF;
+#wp-calendar td:hover>a {
+    color: #788df5;
 }
 
 #wp-calendar>caption {
@@ -306,23 +310,39 @@ post.inverted code {
     color: #bd4147 !important;
 }
 
-.sidebarowo.inverted>ul>li>a,
-.sidebarowo.inverted>div>ul>li>a,
-.sidebarowo.inverted>div>ul>li>ul>li>a,
-.sidebarowo.inverted>ul>li>ul>li>a {
+.sidebarowo.inverted a {
     color: #FFF;
 }
 
-.sidebarowo.inverted>ul>li>a:hover,
-.sidebarowo.inverted>div>ul>li>a:hover,
-.sidebarowo.inverted>div>ul>li>ul>li>a:hover,
-.sidebarowo.inverted>ul>li>ul>li>a:hover {
+.sidebarowo.inverted a:hover {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.sidebarowo.inverted.inverted>ul>li>a:active,
-.sidebarowo.inverted>div>ul>li>a:active,
-.sidebarowo.inverted>div>ul>li>ul>li>a:active,
-.sidebarowo.inverted>ul>li>ul>li>a:active {
+.sidebarowo.inverted a:active {
     color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* 月曆 */
+
+.sidebarowo.inverted #wp-calendar td.pad:hover {
+    background-color: #333;
+}
+
+.sidebarowo.inverted #wp-calendar td#today {
+    color: #FFF;
+}
+
+.sidebarowo.inverted #wp-calendar a {
+    color: #788df5;
+}
+
+.sidebarowo.inverted #wp-calendar td#today:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFF;
+}
+
+.sidebarowo.inverted #wp-calendar td:hover {
+    background-color: rgba(255, 255, 255, 0.11);
+    color: #FFF;
 }
