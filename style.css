@@ -297,8 +297,13 @@ nav.ts.inverted.menu,
 
 ul.inverted,
 .inverted li,
-post.inverted * {
+.inverted li:before,
+post.inverted *:not(code) {
     color: #ffffff !important;
+}
+
+post.inverted code {
+    color: #bd4147 !important;
 }
 
 .sidebarowo.inverted>ul>li>a,
