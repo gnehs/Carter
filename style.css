@@ -7,6 +7,11 @@ Author URI: https://github.com/gnehs/Carter
 Version: 2.2.0
 */
 
+[data-dark].changeing {
+    transition: .4s;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.79);
+}
+
 
 /*
     避免後台自訂頁面亂搞背景
