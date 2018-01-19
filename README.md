@@ -14,7 +14,7 @@
 3. 目前可調整選項：預設、強制啟用、強制停用
 4. 若您要新增切換夜間模式按鈕，請複製下方程式碼並貼上到"自訂 HTML"小工具
 ```html
-<button class="ts fluid button" onclick="switchToNightTheme('true')" id="nightmode">On</button>
+<button class="ts fluid button" onclick="NightMode_switchToNightTheme('true')" id="nightmode" data-dark="">On</button>
 ```
 ## 翻譯
 - 翻譯文件在  /languages/  
