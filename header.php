@@ -32,9 +32,11 @@
 		$(function(){
 			$(".click.load").click(function(){$(this).addClass("loading");}) //按下 .click.load 的按鈕，切換按鈕成讀取狀態
 			// ===== 夜間模式 =====
-			// 若要停用，將 nightmode() 改成 nightmode("false")
-			// 若要強制啟用，將 nightmode() 改成 nightmode("enable")
-			nightmode();
+			// nightmode(     |false|"enable")
+			// 留空：啟用根據時間自動切換
+			// false：停用
+			// enable：強制啟用
+			nightmode(false);
 		});
 		</script>
 		<!-- /Script -->
