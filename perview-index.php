@@ -1,4 +1,4 @@
-<div class="ts card perview">
+<div class="ts card perview" data-dark>
 			<a class="image" href="<?php the_permalink(); ?>">
 				<?php if ( has_post_thumbnail() ) { ?>  
 					<?php the_post_thumbnail(); ?>
@@ -18,7 +18,7 @@
 					<?php the_tags( '<div class="ts horizontal basic label">','</div><div class="ts horizontal basic label">' ,'</div>'); ?>
 				</div>
 			</div>
-			<div class="ts fluid bottom attached buttons post operation">
+			<div class="ts fluid bottom attached buttons post operation" data-dark>
 				<a class="ts labeled icon button click load" href="<?php the_permalink(); ?>"><i class="unhide icon"></i><?php esc_html_e( 'Read More', 'Carter' ); ?></a>
 				<?php edit_post_link( '<i class="write icon"></i>' . __( 'Edit', 'Carter' ), '', '', '','ts labeled icon button click load' ); ?> 
 			</div>

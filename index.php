@@ -10,7 +10,7 @@
 		</div>
 		<!-- Blog Navigation -->
 		<div class="ts clearing hidden divider"></div>
-		<div class="ts fluid buttons">
+		<div class="ts fluid buttons" data-dark>
 			<?php previous_posts_link('<i class="arrow left icon"></i>'. __( 'Previous page', 'Carter' )); ?>
 			<?php next_posts_link('<i class="arrow right icon"></i>'. __( 'Next page', 'Carter' )); ?>
 		</div>

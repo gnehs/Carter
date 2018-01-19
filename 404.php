@@ -2,7 +2,7 @@
 
 <div class="ts narrow container" style="padding-top: 20px;"><div class="ts stackable grid">
     <div class="twelve wide column">
-		<div class="ts large heading slate">
+		<div class="ts large heading slate" data-dark>
 			<span class="header"><?php esc_html_e( 'Oh, it seems a problem', 'Carter' ); ?></span>
 			<span class="description"><?php esc_html_e( '😱Oops! That page can&rsquo;t be found. ', 'Carter' ); ?></span>
 			<div class="action">

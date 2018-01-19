@@ -44,8 +44,8 @@
 		<!-- /wp_head -->
 	</head>
 	
-	<body  <?php body_class( $class ); ?> style="display:none">
-		<div class="ts huge slate">
+	<body  <?php body_class( $class ); ?> style="display:none" data-dark>
+		<div class="ts huge slate" data-dark>
 			<div class="image"> 
 				<?php if ( has_header_image() ) { ?>  
 					<img src="<?php header_image(); ?>">  
@@ -60,7 +60,7 @@
 				</a>
 			</div>  
 		</div>
-		<nav class="ts basic fluid menu">
+		<nav class="ts basic fluid menu" data-dark>
 			<?php wp_nav_menu(
 				array(
 				'menu' => '', 

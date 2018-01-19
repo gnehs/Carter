@@ -19,29 +19,29 @@
 					<?php the_tags( '<div class="ts horizontal basic label">','</div><div class="ts horizontal basic label">' ,'</div>'); ?>
 				</span>
 			</div>
-			<div class="ts hidden divider"></div>
+			<div class="ts hidden divider" data-dark></div>
 			
-			<post>
+			<post data-dark>
 				<?php the_content(); ?>
 			</post>
 
-			<div class="ts clearing divider"></div>
+			<div class="ts clearing divider" data-dark></div>
 
-    		<h3 class="ts header">
+    		<h3 class="ts header" data-dark>
 				<?php esc_html_e( 'Share', 'Carter' ); ?>
 				<div class="sub header"><?php esc_html_e( 'Share to your friends', 'Carter' ); ?></div>
 			</h3>
-			<div class="ts primary large icon separated buttons" id="share">
+			<div class="ts primary large icon separated buttons" id="share" data-dark>
     			<a class="ts button" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>"><i class="icon facebook f"></i></a>
     			<a class="ts button" href="https://telegram.me/share/url?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="icon telegram"></i></a>
     			<a class="ts button" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"><i class="icon tumblr"></i></a>
     			<a class="ts button" href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>"><i class="icon twitter"></i></a>
     			<a class="ts button" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><i class="icon google plus"></i></a>
 			</div>
-			<div class="ts clearing divider"></div>
+			<div class="ts clearing divider" data-dark></div>
 			<?php comments_template(); ?>
 
-			<div class="ts clearing hidden divider"></div>
+			<div class="ts clearing hidden divider" data-dark></div>
 			
 		</div>
 		<?php endif; ?>
