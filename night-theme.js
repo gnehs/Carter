@@ -2,6 +2,7 @@ function switchToNightTheme(owo) {
     console.log("切換至暗色主題");
 
     $("[data-dark]").addClass("inverted");
+    $("[data-dark='primary']").removeClass("primary");
     if (owo) {
         window.localStorage["carternightmode"] = "true";
     }
@@ -12,6 +13,7 @@ function switchToNightTheme(owo) {
 function switchToDayTheme(owo) {
     console.log("切換至亮色主題");
     $("[data-dark]").removeClass("inverted");
+    $("[data-dark='primary']").addClass("primary");
     if (owo) {
         window.localStorage["carternightmode"] = "false";
     }

@@ -31,7 +31,7 @@
 				<?php esc_html_e( 'Share', 'Carter' ); ?>
 				<div class="sub header"><?php esc_html_e( 'Share to your friends', 'Carter' ); ?></div>
 			</h3>
-			<div class="ts primary large icon separated buttons" id="share" data-dark>
+			<div class="ts primary large icon separated buttons" id="share" data-dark='primary'>
     			<a class="ts button" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>"><i class="icon facebook f"></i></a>
     			<a class="ts button" href="https://telegram.me/share/url?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="icon telegram"></i></a>
     			<a class="ts button" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"><i class="icon tumblr"></i></a>

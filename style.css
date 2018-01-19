@@ -251,7 +251,7 @@ img.alignleft {
 
 
 /*
-    Dark Theme
+    Night Theme
 */
 
 
@@ -302,24 +302,27 @@ nav.ts.inverted.menu,
 ul.inverted,
 .inverted li,
 .inverted li:before,
-post.inverted *:not(code) {
-    color: #ffffff !important;
+.inverted .ts.speeches .speech>.author,
+post.inverted *:not(code):not(.speech):not(.text),
+.inverted .ts.feed>.event>.content .summary {
+    color: #ffffff;
 }
 
-post.inverted code {
+post.inverted code,
+post.inverted .ts.speeches .speech .content {
     color: #bd4147 !important;
 }
 
-.sidebarowo.inverted a {
-    color: #FFF;
+.inverted a {
+    color: rgb(239, 239, 239);
 }
 
-.sidebarowo.inverted a:hover {
-    color: rgba(255, 255, 255, 0.5);
+.inverted a:hover {
+    color: rgba(255, 255, 255, 0.75);
 }
 
-.sidebarowo.inverted a:active {
-    color: rgba(255, 255, 255, 0.7);
+.inverted a:active {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 
