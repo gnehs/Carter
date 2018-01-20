@@ -2,13 +2,13 @@ function NightMode(mode) {
     $("body").attr("style", "");
     var n = new Date().getHours();
     var nightmode = window.localStorage["carternightmode"]
-    if (nightmode == "true") {
+    if (nightmode == "enable") {
         NightMode_switchToNightTheme();
     }
     if (!mode) {
         return;
     }
-    if (nightmode == "false") {
+    if (nightmode == "disable") {
         NightMode_switchToDayTheme();
     }
     if (mode && n > 20 && n < 6) {
@@ -24,7 +24,9 @@ function NightMode_switchToNightTheme(owo) {
     NightMode_Changeing()
 
     $("[data-dark]").addClass("inverted");
-    $("[data-dark='primary']").removeClass("primary");
+    $("[data-dark]").removeClass(function() {
+        return $(this).attr("data-dark")
+    });
     if (owo) {
         window.localStorage["carternightmode"] = "true";
     }
@@ -37,7 +39,9 @@ function NightMode_switchToDayTheme(owo) {
     NightMode_Changeing()
 
     $("[data-dark]").removeClass("inverted");
-    $("[data-dark='primary']").addClass("primary");
+    $("[data-dark]").addClass(function() {
+        return $(this).attr("data-dark")
+    });
     if (owo) {
         window.localStorage["carternightmode"] = "false";
     }

@@ -11,7 +11,13 @@ get_header(); ?>
 					<?php if ( has_post_thumbnail() ) { ?>  
 						<?php the_post_thumbnail(); ?>  
 					<?php } else {?>  
-						<script src="//gnehs.github.io/RandomPic/randompicture.js"></script>  
+						<script>
+							var pageHeaderImg = Trianglify({
+								width: 1000,
+								height: 360,
+							});
+							document.write('<img src="' + pageHeaderImg.png() + '">');
+						</script>
 					<?php } ?> 
 				</div>
 				<span class="header"><?php the_title(); ?></span>

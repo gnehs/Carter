@@ -19,24 +19,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- CSS -->
-		<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.css" rel="stylesheet" media="screen" />
-		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen" />
-		<style id="night"></style>
+		<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.css" rel="stylesheet">
+		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 		<!-- /CSS -->
 
 		<!-- Script -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/trianglify/1.2.0/trianglify.min.js"></script>
+		<!-- <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.js"></script> -->
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/night-theme.js"></script>
 		<script>
 		$(function(){
 			$(".click.load").click(function(){$(this).addClass("loading");}) //按下 .click.load 的按鈕，切換按鈕成讀取狀態
 			// ===== 夜間模式 =====
-			// NightMode(true|false|"enable")
-			// true：啟用根據時間自動切換
-			// false：停用
+			// NightMode("auto"|"disable"|"enable")
+			// auto：啟用根據時間自動切換
+			// disable：停用
 			// enable：強制啟用
-			NightMode(false);
+			NightMode("disable");
 		});
 		</script>
 		<!-- /Script -->
@@ -52,7 +52,13 @@
 				<?php if ( has_header_image() ) { ?>  
 					<img src="<?php header_image(); ?>">  
 				<?php } else {?>  
-					<script src="//gnehs.github.io/RandomPic/randompicture.js"></script>  
+					<script>
+						var headerImg = Trianglify({
+							width: window.innerWidth,
+							height: 500,
+						});
+						document.write('<img src="' + headerImg.png() + '">');
+					</script>
 				<?php } ?>
 			</div>
 			<div class="ts narrow container">
@@ -62,7 +68,7 @@
 				</a>
 			</div>  
 		</div>
-		<nav class="ts basic fluid menu" data-dark>
+		<nav class="ts basic fluid menu" data-dark="basic">
 			<?php wp_nav_menu(
 				array(
 				'menu' => '', 

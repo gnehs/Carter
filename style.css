@@ -250,7 +250,7 @@ img.alignleft {
 */
 
 .ts.slate .image>img {
-    filter: blur(2px);
+    filter: blur(3px);
     transform: scale(1.1);
 }
 
@@ -295,10 +295,11 @@ nav.ts.fluid.menu.inverted a:active {
     color: #D8D8D8 !important;
 }
 
-.ts.inverted.card,
-nav.ts.inverted.menu,
-.ts.inverted.segment,
-.ts.inverted.slate {
+.inverted.card,
+.inverted.menu,
+.inverted.segment,
+.inverted.slate,
+.inverted .ts.speeches .speech .content {
     box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.06);
     border-color: rgba(0, 0, 0, 0);
     background: #333;
@@ -308,13 +309,13 @@ ul.inverted,
 .inverted li,
 .inverted li:before,
 .inverted .ts.speeches .speech>.author,
-post.inverted *:not(code):not(.speech):not(.text),
-.inverted .ts.feed>.event>.content .summary {
+.inverted *:not(code),
+.inverted .ts.feed>.event>.content .summary,
+.inverted .ts.speeches .speech .content {
     color: #ffffff;
 }
 
-post.inverted code,
-post.inverted .ts.speeches .speech .content {
+post.inverted code {
     color: #bd4147 !important;
 }
 
