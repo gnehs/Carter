@@ -311,14 +311,7 @@ ul.inverted,
 .inverted .ts.speeches .speech>.author,
 .inverted *:not(code),
 .inverted .ts.feed>.event>.content .summary,
-.inverted .ts.speeches .speech .content {
-    color: #ffffff;
-}
-
-post.inverted code {
-    color: #bd4147 !important;
-}
-
+.inverted .ts.speeches .speech .content,
 post.inverted h1,
 post.inverted h2,
 post.inverted h3,
@@ -326,7 +319,11 @@ post.inverted h4,
 post.inverted h5,
 post.inverted h6,
 post.inverted .ts.header {
-    color: #ffffff!important;
+    color: #fff!important;
+}
+
+post.inverted code {
+    color: #bd4147 !important;
 }
 
 .inverted a {

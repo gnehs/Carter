@@ -5,8 +5,8 @@
 		<?php } else {?>  
 			<script>
 				var perviewImg = Trianglify({
-					width: 1000,
-					height: 360,
+					width: 1600,
+					height: 900,
 				});
 				document.write('<img src="' + perviewImg.png() + '">');
 			</script>
