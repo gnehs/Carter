@@ -2,20 +2,25 @@ function NightMode(mode) {
     $("body").attr("style", "");
     var n = new Date().getHours();
     var nightmode = window.localStorage["carternightmode"]
-    if (nightmode == "enable") {
-        NightMode_switchToNightTheme();
+    if (nightmode == "true") {
+        console.log(1)
+        NightMode_switchToNightTheme()
+        return
     }
-    if (!mode) {
-        return;
+    if (nightmode == "false" | mode == "disabled") {
+        console.log(2)
+        NightMode_switchToDayTheme()
+        return
     }
-    if (nightmode == "disable") {
-        NightMode_switchToDayTheme();
-    }
-    if (mode && n > 20 && n < 6) {
-        NightMode_switchToNightTheme();
+    if (mode == "auto" && n > 20 && n < 6) {
+        console.log(3)
+        NightMode_switchToNightTheme()
+        return
     }
     if (mode == "enabled") {
-        NightMode_switchToNightTheme(true);
+        console.log(4)
+        NightMode_switchToNightTheme(true)
+        return
     }
 }
 

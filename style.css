@@ -295,14 +295,14 @@ nav.ts.fluid.menu.inverted a:active {
     color: #D8D8D8 !important;
 }
 
-.inverted.card,
-.inverted.menu,
-.inverted.segment,
-.inverted.slate,
+.inverted.ts.card,
+.inverted.ts.menu,
+.inverted.ts.segment,
+.inverted.ts.slate,
 .inverted .ts.speeches .speech .content {
     box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.06);
-    border-color: rgba(0, 0, 0, 0);
     background: #333;
+    border-color: #3e3d3d;
 }
 
 ul.inverted,
@@ -317,6 +317,16 @@ ul.inverted,
 
 post.inverted code {
     color: #bd4147 !important;
+}
+
+post.inverted h1,
+post.inverted h2,
+post.inverted h3,
+post.inverted h4,
+post.inverted h5,
+post.inverted h6,
+post.inverted .ts.header {
+    color: #ffffff!important;
 }
 
 .inverted a {
