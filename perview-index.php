@@ -1,16 +1,18 @@
 <div class="ts card perview" data-dark>
-	<a class="image" href="<?php the_permalink(); ?>">
-		<?php if ( has_post_thumbnail() ) { ?>  
-			<?php the_post_thumbnail(); ?>
-		<?php } else {?>  
-			<script>
-				var perviewImg = Trianglify({
-					width: 1600,
-					height: 900,
-				});
-				document.write('<img src="' + perviewImg.png() + '">');
-			</script>
-		<?php } ?> 
+	<a class="video" href="<?php the_permalink(); ?>">
+		<div class="ts 16:9 embed">
+			<?php if ( has_post_thumbnail() ) { ?>  
+				<?php the_post_thumbnail(); ?>
+			<?php } else {?>  
+				<script>
+					var perviewImg = Trianglify({
+						width: 1600,
+						height: 900,
+					});
+					document.write('<img src="' + perviewImg.png() + '">');
+				</script>
+			<?php } ?> 
+		</div>
 	</a>
 	<div class="content">
         <div class="header"><?php the_title(); ?></div>

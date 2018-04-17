@@ -23,18 +23,35 @@ body {
 }
 
 
-/*
-	文章內頁標題用的CSS
+/*  
+    文章預覽
 */
+
+.ts.card.perview .ts.embed img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .28571rem .28571rem 0 0;
+}
+
+
+/*
+	文章內頁
+*/
+
+
+/*文章內頁標題用的CSS*/
 
 .post .description>a {
     color: #fff;
 }
 
 
-/*
-	文章的文字可讀性提升
-*/
+/*文章的文字可讀性提升*/
 
 post p,
 post {
@@ -43,9 +60,7 @@ post {
 }
 
 
-/*
-	文章內頁圖片修正及樣式美化
-*/
+/*文章內頁圖片修正及樣式美化*/
 
 post img {
     height: auto;
@@ -55,18 +70,14 @@ post img {
 }
 
 
-/* 
-    文章內頁標籤修正 
-*/
+/* 文章內頁標籤修正 */
 
 .post .ts.label {
     text-shadow: 0 0 0px black;
 }
 
 
-/*
-    標籤修正
-*/
+/*標籤修正*/
 
 .ts.label {
     margin: .5em !important;
@@ -144,9 +155,11 @@ post img {
 
 
 /*
-	留言用的
-	留言中的回覆
+	留言
 */
+
+
+/*留言中的回覆*/
 
 ul.children,
 ul.children ul.children {
@@ -187,7 +200,7 @@ ul.children ul.children {
 
 /*
     選單樣式
-	因為  Tocas UI 的格式不能直接套到 NAV 但是又不想直接用 JQ 只好這樣啦
+	因為 Tocas UI 的格式不能直接套到 NAV 但是又不想直接用 JQ 只好這樣啦
 */
 
 #footermenu>li>a,
@@ -211,16 +224,6 @@ ul.children ul.children {
 #headermenu>li>a:active {
     color: #404040;
     background-color: rgba(0, 0, 0, 0.09);
-}
-
-
-/* 
-	.ts.image fix
-	修正在部分外掛下產生的圖片拉伸問題
-*/
-
-.ts.card>.image img {
-    height: auto !important;
 }
 
 
