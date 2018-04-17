@@ -21,7 +21,7 @@
 		</div>
 		<div class="description">
 			<?php the_excerpt(); ?>
-			<?php the_tags( '<div class="ts horizontal basic label">','</div><div class="ts horizontal basic label">' ,'</div>'); ?>
+			<?php the_tags( '<div class="ts horizontal basic label" data-dark="basic">','</div><div class="ts horizontal basic label" data-dark="basic">' ,'</div>'); ?>
 		</div>
 	</div>
 	<div class="ts fluid bottom attached buttons post operation" data-dark>
