@@ -22,7 +22,7 @@
 										  <?php comments_popup_link(__( 'No one commented', 'Carter' ), __( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' ), '',__( 'Comments are closed', 'Carter' )); ?> 
 										  <?php edit_post_link(__( 'Edit', 'Carter' ), ''); ?></span>
 				<span class="description">
-					<?php the_tags( '<div class="ts horizontal basic label">','</div><div class="ts horizontal basic label">' ,'</div>'); ?>
+					<?php the_tags( '<div class="ts horizontal basic label" data-dark="basic">','</div><div class="ts horizontal basic label" data-dark="basic">' ,'</div>'); ?>
 				</span>
 			</div>
 			<div class="ts hidden divider" data-dark></div>
