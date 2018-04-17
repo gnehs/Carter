@@ -12,6 +12,8 @@
 							var pageHeaderImg = Trianglify({
 								width: 1000,
 								height: 360,
+								stroke_width: 20,
+								cell_size: 40,
 							});
 							document.write('<img src="' + pageHeaderImg.png() + '">');
 						</script>

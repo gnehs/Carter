@@ -56,6 +56,8 @@
 						var headerImg = Trianglify({
 							width: window.innerWidth,
 							height: 500,
+							stroke_width: 40,
+							cell_size: 50,
 						});
 						document.write('<img src="' + headerImg.png() + '">');
 					</script>

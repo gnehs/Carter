@@ -8,6 +8,8 @@
 					var perviewImg = Trianglify({
 						width: 1600,
 						height: 900,
+						stroke_width: 180,
+						cell_size: 140,
 					});
 					document.write('<img src="' + perviewImg.png() + '">');
 				</script>
