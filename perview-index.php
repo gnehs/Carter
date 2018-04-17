@@ -19,9 +19,9 @@
 	<div class="content">
         <div class="header"><?php the_title(); ?></div>
        	<div class="meta">
-            <div><?php the_time('Y/n/j') ?> </div>
-			<div><?php comments_number(__( 'No one commented', 'Carter' ),__( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' )); ?></div>
-			<div>@<?php the_author() ;?></div>
+            <div><i class="calendar icon"></i><?php the_time('Y/n/j') ?> </div>
+			<div><i class="comment icon"></i><?php comments_number(__( 'No one commented', 'Carter' ),__( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' )); ?></div>
+			<div><i class="user icon"></i><?php the_author() ;?></div>
 		</div>
 		<div class="description">
 			<?php the_excerpt(); ?>

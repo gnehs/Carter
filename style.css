@@ -27,14 +27,11 @@ body {
     文章預覽
 */
 
+
+/* 圖片預覽修正 */
+
+.ts.card.perview .ts.embed,
 .ts.card.perview .ts.embed img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     border-radius: .28571rem .28571rem 0 0;
 }
 

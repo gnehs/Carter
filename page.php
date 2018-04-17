@@ -18,7 +18,7 @@
 					<?php } ?> 
 				</div>
 				<span class="header"><?php the_title(); ?></span>
-				<span class="description"><?php the_time('Y/n/j') ?> <?php edit_post_link(__( 'Edit', 'Carter' ), ''); ?></span>
+				<span class="description"><i class="calendar icon"></i><?php the_time('Y/n/j') ?> <?php edit_post_link('<i class="pencil icon"></i>'); ?><?php edit_post_link(__( 'Edit', 'Carter' ), ''); ?></span>
 			</div>
 			<div class="ts hidden divider" data-dark></div>
 			<post data-dark>
