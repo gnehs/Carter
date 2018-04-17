@@ -247,16 +247,6 @@ img.alignleft {
 
 
 /*
-	板岩裡的圖片放大及模糊
-*/
-
-.ts.slate .image>img {
-    filter: blur(3px);
-    transform: scale(1.1);
-}
-
-
-/*
     Night Theme
 */
 
