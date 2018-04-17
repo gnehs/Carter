@@ -74,13 +74,6 @@ post img {
 }
 
 
-/*標籤修正*/
-
-.ts.label {
-    margin: .5em !important;
-}
-
-
 /*
 	Sidebar
 	因為和 Sidebar 起衝突，所以改成 Sidebarowo
