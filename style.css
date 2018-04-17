@@ -247,6 +247,15 @@ img.alignleft {
 
 
 /*
+	板岩裡的圖片變暗
+*/
+
+.ts.slate .image>img {
+    filter: brightness(.8)
+}
+
+
+/*
     Night Theme
 */
 
