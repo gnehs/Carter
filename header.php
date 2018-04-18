@@ -52,19 +52,21 @@
 		<header class="ts huge slate" data-dark>
 			<div class="image"> 
 				<?php if ( has_header_image() ) { ?>  
-					<img src="<?php header_image(); ?>">  
+					<img src="<?php header_image(); ?>" id="headerImg">  
 				<?php } else {?>  
+					<img  id="headerImg">  
 					<script>
-						if(!window.sessionStorage['headerImg']){
-							var headerImg = Trianglify({
+						headerImg=window.sessionStorage['headerImg']
+						if(!headerImg){
+							var headerImgTrianglify = Trianglify({
 								width: window.innerWidth,
 								height: 500,
 								stroke_width: 40,
 								cell_size: 50,
 							});
-						   window.sessionStorage['headerImg'] = headerImg.png()
+						   window.sessionStorage['headerImg'] = headerImgTrianglify.png()
 						}
-						document.write('<img src="' + window.sessionStorage['headerImg'] + '">');
+						document.getElementById("headerImg").src=headerImg
 					</script>
 				<?php } ?>
 			</div>
