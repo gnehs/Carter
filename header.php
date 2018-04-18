@@ -25,9 +25,11 @@
 
 		<!-- Script -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="//unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/trianglify/1.2.0/trianglify.min.js"></script>
 		<!-- <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.js"></script> -->
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/night-theme.js"></script>
+		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/carter.js"></script>
 		<script>
 		$(function(){
 			$(".click.load").click(function(){$(this).addClass("loading");}) //按下 .click.load 的按鈕，切換按鈕成讀取狀態
@@ -47,19 +49,22 @@
 	</head>
 	
 	<body  <?php body_class( $class ); ?> style="display:none" data-dark>
-		<div class="ts huge slate" data-dark>
+		<header class="ts huge slate" data-dark>
 			<div class="image"> 
 				<?php if ( has_header_image() ) { ?>  
 					<img src="<?php header_image(); ?>">  
 				<?php } else {?>  
 					<script>
-						var headerImg = Trianglify({
-							width: window.innerWidth,
-							height: 500,
-							stroke_width: 40,
-							cell_size: 50,
-						});
-						document.write('<img src="' + headerImg.png() + '">');
+						if(!window.sessionStorage['headerImg']){
+							var headerImg = Trianglify({
+								width: window.innerWidth,
+								height: 500,
+								stroke_width: 40,
+								cell_size: 50,
+							});
+						   window.sessionStorage['headerImg'] = headerImg.png()
+						}
+						document.write('<img src="' + window.sessionStorage['headerImg'] + '">');
 					</script>
 				<?php } ?>
 			</div>
@@ -69,7 +74,7 @@
 			 		<span class="description"><?php bloginfo('description'); ?></span>
 				</a>
 			</div>  
-		</div>
+		</header>
 		<nav class="ts basic fluid menu" data-dark="basic">
 			<?php wp_nav_menu(
 				array(
