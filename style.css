@@ -352,3 +352,24 @@ post.inverted code {
     background-color: rgba(255, 255, 255, 0.11);
     color: #FFF;
 }
+
+
+/*
+    SweetAlert
+*/
+
+.swal-overlay--show-modal {
+    background-color: #000000a3;
+}
+
+.swal-modal {
+    background-color: #fff;
+}
+
+.inverted .swal-modal {
+    background-color: #2b2b2b;
+}
+
+.inverted .swal-button--cancel {
+    color: #2b2b2b !important;
+}
