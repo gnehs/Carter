@@ -54,7 +54,7 @@
 				<?php if ( has_header_image() ) { ?>  
 					<img src="<?php header_image(); ?>" id="headerImg">  
 				<?php } else {?>  
-					<img  id="headerImg">  
+					<img id="headerImg">  
 					<script>
 						headerImg=window.sessionStorage['headerImg']
 						if(!headerImg){
@@ -65,8 +65,9 @@
 								cell_size: 50,
 							});
 						   window.sessionStorage['headerImg'] = headerImgTrianglify.png()
-						}
-						document.getElementById("headerImg").src=headerImg
+						   document.getElementById("headerImg").src = headerImgTrianglify.png()
+						}else
+							document.getElementById("headerImg").src = headerImg
 					</script>
 				<?php } ?>
 			</div>
