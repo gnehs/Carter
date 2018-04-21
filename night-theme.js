@@ -26,43 +26,35 @@ function NightMode(mode) {
 function NightMode_switchToNightTheme(owo) {
     console.log("切換至暗色主題");
 
-    var el = document.querySelectorAll("[data-dark]")
-    el.forEach(function(node) {
+    document.querySelectorAll("[data-dark]").forEach(function(node) {
         addClass(node, "inverted")
     });
-
-    // if el 
-    var eldd = document.querySelectorAll('[data-dark]:not([data-dark=""])');
-    eldd.forEach(function(node) {
+    document.querySelectorAll('[data-dark]:not([data-dark=""])').forEach(function(node) {
         removeClass(node, node.getAttribute("data-dark"))
     });
 
-    if (owo) {
-        window.localStorage["carternightmode"] = "true";
-    }
     document.getElementById("nightmode").innerHTML = "Off";
     document.getElementById("nightmode").setAttribute("onclick", "NightMode_switchToDayTheme('true')");
+    if (owo)
+        window.localStorage["carternightmode"] = "true";
+
 }
 
 function NightMode_switchToDayTheme(owo) {
     console.log("切換至亮色主題");
 
-    var el = document.querySelectorAll("[data-dark]")
-    el.forEach(function(node) {
+    document.querySelectorAll("[data-dark]").forEach(function(node) {
         removeClass(node, "inverted")
     });
-
-    // if el 
-    var eldd = document.querySelectorAll('[data-dark]:not([data-dark=""])');
-    eldd.forEach(function(node) {
+    document.querySelectorAll('[data-dark]:not([data-dark=""])').forEach(function(node) {
         addClass(node, node.getAttribute("data-dark"))
     });
 
-    if (owo) {
-        window.localStorage["carternightmode"] = "false";
-    }
+
     document.getElementById("nightmode").innerHTML = "On";
     document.getElementById("nightmode").setAttribute("onclick", "NightMode_switchToNightTheme('true')");
+    if (owo)
+        window.localStorage["carternightmode"] = "false";
 }
 
 
