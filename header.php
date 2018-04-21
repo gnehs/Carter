@@ -74,7 +74,7 @@
 			<div class="ts narrow container">
 				<a href="<?php echo home_url ( ) ; ?>" id="backToHome">
 			 		<span class="header" style="text-align: left;"><?php bloginfo('name'); ?></span>
-			 		<span class="description"><?php bloginfo('description'); ?></span>
+			 		<span class="description" style="text-align: left;"><?php bloginfo('description'); ?></span>
 				</a>
 			</div>  
 		</header>
