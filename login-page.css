@@ -49,17 +49,20 @@ body {
 
 .login input:not([type="checkbox"]):not([type="submit"]) {
     border-color: #66afe900;
-    box-shadow: inset 0px -11px 0px -10px #d4d4d4;
+    border-bottom-color: #d4d4d4;
     transition: all 0.1s linear;
+    box-shadow: none;
 }
 
 .login input:not([type="checkbox"]):not([type="submit"]):hover {
-    box-shadow: inset 0px -11px 0px -10px #aaa;
+    border-bottom-color: #aaa;
+    box-shadow: none;
 }
 
 .login input:not([type="checkbox"]):not([type="submit"]):focus {
     outline: 0;
     box-shadow: inset 0px -11px 0px -10px #66afe9;
+    border-bottom-color: #66afe9;
 }
 
 .login a,
