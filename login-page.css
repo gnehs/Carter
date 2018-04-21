@@ -2,7 +2,7 @@ body {
     background-image: url(https://i.imgur.com/xjEIE7h.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 100vh;
+    background-attachment: fixed;
 }
 
 
@@ -91,7 +91,7 @@ body {
     border: none !important;
     background: #ffffff58;
     height: 37px;
-    line-height: 37px;
+    line-height: 29px;
 }
 
 #wp-submit:hover {
