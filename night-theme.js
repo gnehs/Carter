@@ -1,5 +1,4 @@
 function NightMode(mode) {
-    $("body").attr("style", "");
     var n = new Date().getHours();
     var nightmode = window.localStorage["carternightmode"]
     if (nightmode == "true") {
@@ -26,38 +25,58 @@ function NightMode(mode) {
 
 function NightMode_switchToNightTheme(owo) {
     console.log("切換至暗色主題");
-    NightMode_Changeing()
 
-    $("[data-dark]").addClass("inverted");
-    $("[data-dark]").removeClass(function() {
-        return $(this).attr("data-dark")
+    var el = document.querySelectorAll("[data-dark]")
+    el.forEach(function(node) {
+        addClass(node, "inverted")
     });
+
+    // if el 
+    var eldd = document.querySelectorAll('[data-dark]:not([data-dark=""])');
+    eldd.forEach(function(node) {
+        removeClass(node, node.getAttribute("data-dark"))
+    });
+
     if (owo) {
         window.localStorage["carternightmode"] = "true";
     }
-    $("#nightmode").html("Off");
-    $("#nightmode").attr("onclick", "NightMode_switchToDayTheme('true')");
+    document.getElementById("nightmode").innerHTML = "Off";
+    document.getElementById("nightmode").setAttribute("onclick", "NightMode_switchToDayTheme('true')");
 }
 
 function NightMode_switchToDayTheme(owo) {
     console.log("切換至亮色主題");
-    NightMode_Changeing()
 
-    $("[data-dark]").removeClass("inverted");
-    $("[data-dark]").addClass(function() {
-        return $(this).attr("data-dark")
+    var el = document.querySelectorAll("[data-dark]")
+    el.forEach(function(node) {
+        removeClass(node, "inverted")
     });
+
+    // if el 
+    var eldd = document.querySelectorAll('[data-dark]:not([data-dark=""])');
+    eldd.forEach(function(node) {
+        addClass(node, node.getAttribute("data-dark"))
+    });
+
     if (owo) {
         window.localStorage["carternightmode"] = "false";
     }
-    $("#nightmode").html("On");
-    $("#backToHome").attr("href");
-    $("#nightmode").attr("onclick", "NightMode_switchToNightTheme('true')");
+    document.getElementById("nightmode").innerHTML = "On";
+    document.getElementById("nightmode").setAttribute("onclick", "NightMode_switchToNightTheme('true')");
 }
 
-function NightMode_Changeing() {
-    $("[data-dark]").addClass("changeing");
-    setTimeout(function() {
-        $("[data-dark]").removeClass("changeing");
-    }, 400);
+
+function addClass(obj, cls) {
+    var obj_class = obj.className
+    var blank = (obj_class != '') ? ' ' : '';
+    var added = obj_class + blank + cls;
+    obj.className = added;
+}
+
+function removeClass(obj, cls) {
+    var obj_class = ' ' + obj.className + ' ';
+    obj_class = obj_class.replace(/(\s+)/gi, ' ')
+    var removed = obj_class.replace(' ' + cls + ' ', ' ');
+    removed = removed.replace(/(^\s+)|(\s+$)/g, '');
+    obj.className = removed;
 }

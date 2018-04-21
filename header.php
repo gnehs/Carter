@@ -31,14 +31,14 @@
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/night-theme.js"></script>
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/carter.js"></script>
 		<script>
+		// ===== 夜間模式 =====
+		// NightMode("auto"|"disabled"|"enabled")
+		// auto：啟用根據時間自動切換
+		// disabled：停用
+		// enabled：強制啟用
+		window.onload = ()=>{ NightMode("disabled") };
 		$(function(){
 			$(".click.load").click(function(){$(this).addClass("loading");}) //按下 .click.load 的按鈕，切換按鈕成讀取狀態
-			// ===== 夜間模式 =====
-			// NightMode("auto"|"disabled"|"enabled")
-			// auto：啟用根據時間自動切換
-			// disabled：停用
-			// enabled：強制啟用
-			NightMode("disabled");
 		});
 		</script>
 		<!-- /Script -->
@@ -48,7 +48,7 @@
 		<!-- /wp_head -->
 	</head>
 	
-	<body  <?php body_class( $class ); ?> style="display:none" data-dark>
+	<body  <?php body_class( $class ); ?> data-dark>
 		<header class="ts huge slate" data-dark>
 			<div class="image"> 
 				<?php if ( has_header_image() ) { ?>  
