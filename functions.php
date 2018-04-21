@@ -171,32 +171,10 @@ add_filter('previous_posts_link_attributes', 'posts_link_attributes_previous');
 /*
 	登入介面美化
 */
-function gnehs_login_css() {
-    echo '<style type="text/css">
-            .login h1 a{
-                background-color: white;
-                border-radius: 100%;
-            }
-            .login-action-login{
-                background-image: url(//i.imgur.com/73fVUB6.jpg);
-                background-position: center;
-            }
-            .login form {
-                background: rgba(255, 255, 255, 0.9);
-            }
-            .login #backtoblog a, .login #nav a {
-                text-shadow: 0 0 3px white;
-            }
-            .login #backtoblog a:hover, .login #nav a:hover{
-                color: #000000;
-            }
-            .login #login_error, .login .message {
-                background: rgba(255, 255, 255, 0.9);
-            }
-            </style>';
-}
+function gnehs_login_css() { ?>
+	<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/login-page.css" rel="stylesheet">
+<?php }
 add_action('login_head', 'gnehs_login_css');
-
 /*
 	餵給編輯器的 CSS
 */

@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(-45deg, rgb(255, 255, 255), rgb(255, 135, 135), rgb(233, 173, 255), rgb(160, 255, 121));
+    background-size: 400%;
+    background-repeat: repeat, no-repeat;
+    animation: 40s Gradient linear infinite;
+}
+
+@keyframes Gradient {
+    0%,
+    100% {
+        background-position: 20% 20%
+    }
+    50% {
+        background-position: 70% 70%
+    }
+}
+
+#login {
+    width: 380px;
+    margin: 0;
+    background-color: #00000057;
+    min-height: 100vh;
+}
+
+.login .message {
+    background-color: #00000033;
+    color: white;
+}
+
+.login form {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+.login label,
+.login input:not([type="checkbox"]):not([type="submit"]) {
+    color: #ffffff;
+    font-size: 24px;
+    text-shadow: 0px 1px 3px #00000061;
+}
+
+.login input:not([type="checkbox"]):not([type="submit"]) {
+    border-color: #66afe900;
+    box-shadow: inset 0px -11px 0px -10px #d4d4d4;
+    transition: all 0.1s linear;
+}
+
+.login input:not([type="checkbox"]):not([type="submit"]):hover {
+    box-shadow: inset 0px -11px 0px -10px #aaa;
+}
+
+.login input:not([type="checkbox"]):not([type="submit"]):focus {
+    outline: 0;
+    box-shadow: inset 0px -11px 0px -10px #66afe9;
+}
+
+.login a,
+.login form .forgetmenot label,
+#wp-submit {
+    color: #ffffff !important;
+    font-size: 20px;
+    text-shadow: 0px 1px 3px #00000061;
+}
+
+.login h1 a {
+    display: none
+}
+
+.login form .input {
+    background: #00000000;
+}
+
+.login #login_error,
+.login .message {
+    border: none !important;
+}
+
+#wp-submit {
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff1f;
+    height: 37px;
+    line-height: 37px;
+}
+
+#wp-submit:hover {
+    background: #ffffff52;
+}
