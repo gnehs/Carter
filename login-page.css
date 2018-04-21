@@ -1,9 +1,16 @@
 body {
+    background-image: url(https://i.imgur.com/xjEIE7h.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+}
+
+
+/*
     background: linear-gradient(-45deg, rgb(255, 255, 255), rgb(255, 135, 135), rgb(233, 173, 255), rgb(160, 255, 121));
     background-size: 400%;
-    background-repeat: repeat, no-repeat;
     animation: 40s Gradient linear infinite;
-}
+    */
 
 @keyframes Gradient {
     0%,
@@ -19,7 +26,8 @@ body {
     width: 380px;
     margin: 0;
     background-color: #00000057;
-    min-height: 100vh;
+    min-height: 80vh !important;
+    padding: 10vh 0 !important;
 }
 
 .login .message {
@@ -78,11 +86,11 @@ body {
 #wp-submit {
     box-shadow: none !important;
     border: none !important;
-    background: #ffffff1f;
+    background: #ffffff58;
     height: 37px;
     line-height: 37px;
 }
 
 #wp-submit:hover {
-    background: #ffffff52;
+    background: #ffffff95;
 }
