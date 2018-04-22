@@ -1,9 +1,16 @@
 body {
+    background-image: url(https://i.imgur.com/xjEIE7h.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*
     background: linear-gradient(-45deg, rgb(255, 255, 255), rgb(255, 135, 135), rgb(233, 173, 255), rgb(160, 255, 121));
     background-size: 400%;
     animation: 40s Gradient linear infinite;
-}
+    */
 
 @keyframes Gradient {
     0%,
@@ -21,7 +28,6 @@ body {
     background-color: #00000057;
     min-height: 80vh !important;
     padding: 10vh 0 !important;
-    box-shadow: 0px 0 20px 0px #00000052;
 }
 
 .login .message {
