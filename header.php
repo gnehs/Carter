@@ -62,9 +62,9 @@
 			<?php wp_nav_menu(
 				array(
 				'menu' => '', 
-				'container' => 'div',
-				'container_class' => 'ts narrow container navfix', 
-				'container_id' => 'headermenu', 
+				'container' => '',
+				'container_class' => '', 
+				'container_id' => '', 
 				'menu_class' => '',
 				'menu_id' => '',
 				'echo' => true,
@@ -73,10 +73,10 @@
 				'after' => '',
 				'link_before' => '', 
 				'link_after' => '',
-				'items_wrap' => '%3$s',
+				'items_wrap' => '<div id="%1$s" class="%2$s ts narrow container">%3$s</div>',
 				'item_spacing' => 'preserve',
 				'depth' => 1,
-				'walker' => '',
+				'walker' =>  new Walker_Quickstart_Menu(),
 				'theme_location' => 'headernav'
  				));
 			 ?>
