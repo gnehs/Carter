@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 	<!-- Column 1 /Content -->
-	<div id="content" class="ts narrow container" style="padding-top: 20px;"><div class="ts stackable grid">
+	<div id="content" class="ts narrow container" style="padding-top: 20px;">
 		<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
-		<div class="twelve wide column">
 			<div class="ts heading vertically padded slate post" data-dark>
 				<div class="image">
 					<?php if ( has_post_thumbnail() ) { ?>  
@@ -25,11 +24,7 @@
 				<?php the_content(); ?>
 			</post>
 			<div class="ts hidden clearing divider" data-dark></div>
-		</div>
 		<?php endif; ?>
 		
-		<div class="four wide column">
-			<?php get_sidebar(); ?>
-		</div>
-	</div></div>
+</div>
 <?php get_footer(); ?>

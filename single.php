@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
 <div id="content" class="single">
 	<div class="header-wrapper">
 		<div class="bg" style="background-image:url('<?php echo(has_post_thumbnail()?the_post_thumbnail_url():"https://picsum.photos/1200#".rand()) ?>')"></div>
@@ -12,7 +13,6 @@
 		</div>
 	</div>
 	<div class="ts narrow container" style="padding-top: 20px;">
-		<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
 			<div class="ts hidden divider" data-dark></div>
 			
 			<post data-dark>
@@ -35,10 +35,7 @@
 			<?php comments_template(); ?>
 
 			<div class="ts clearing hidden divider" data-dark></div>
-			
-		
-		<?php endif; ?>
-		
 	</div>
 </div>
+<?php endif; ?>
 <?php get_footer(); ?>

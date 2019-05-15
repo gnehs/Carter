@@ -86,21 +86,6 @@ function update_today(){
 }
 
 /*
-	側邊欄
-*/
-function register_Right_sidebar() {
-    register_sidebar( array(
-       	'name' => __( 'Sidebar', 'Carter' ),
-		'id' => 'sidebar',
-		'description' => __( 'Displayed on the right side of each page.', 'Carter' ),
-		'before_widget' => '<div class="ts segment sidebarowo" data-dark>',
-		'after_widget' => '</div>',
-		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;" data-dark>',
-		'after_title' => '</h5>'
-    ) );
-}
-add_action( 'widgets_init', 'register_Right_sidebar' );
-/*
 	底部欄 1
 */
 function register_Footer1() {
