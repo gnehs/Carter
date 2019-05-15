@@ -30,8 +30,8 @@ body {
 
 /* 圖片預覽修正 */
 
-.ts.card.perview .ts.embed,
-.ts.card.perview .ts.embed img {
+.ts.card.preview .ts.embed,
+.ts.card.preview .ts.embed img {
     border-radius: .28571rem .28571rem 0 0;
 }
 
@@ -309,7 +309,7 @@ post.inverted h4,
 post.inverted h5,
 post.inverted h6,
 post.inverted .ts.header {
-    color: #fff!important;
+    color: #fff !important;
 }
 
 post.inverted code {
@@ -372,4 +372,12 @@ post.inverted code {
 
 .inverted .swal-button--cancel {
     color: #2b2b2b !important;
+}
+
+/*
+    preview-index
+*/
+.preview-index .img img {
+    max-width: 100%;
+    height: auto;
 }

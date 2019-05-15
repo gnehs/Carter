@@ -20,6 +20,7 @@
 
 		<!-- CSS -->
 		<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.css" rel="stylesheet">
+		<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/style.css" rel="stylesheet">
 		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 		<!-- /CSS -->
 
@@ -37,9 +38,6 @@
 		// disabled：停用
 		// enabled：強制啟用
 		window.onload = ()=>{ NightMode("disabled") };
-		$(function(){
-			$(".click.load").click(function(){$(this).addClass("loading");}) //按下 .click.load 的按鈕，切換按鈕成讀取狀態
-		});
 		</script>
 		<!-- /Script -->
 

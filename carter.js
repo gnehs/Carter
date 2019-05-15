@@ -1,5 +1,5 @@
-$(function() {
-    $("[data-R18href]").click(function() {
+$(function () {
+    $("[data-R18href]").click(function () {
         if (!window.localStorage["adultAlert"]) {
             swal({
                 title: "警告 WARNING",
@@ -18,4 +18,10 @@ $(function() {
             document.location.href = $(this).attr("data-R18href");
         }
     })
+    $(".preview-index .button").click(function () {
+        ($(this).parents('.preview-index')).find('.ts.dimmer').addClass('active')
+    })
+    $(".click.load").click(function () {
+        $(this).addClass("loading");
+    }) //按下 .click.load 的按鈕，切換按鈕成讀取狀態
 });

@@ -4,7 +4,7 @@
 <?php if ( have_posts() ) : ?>
 <div class="twelve wide column"><div class="ts two stackable cards">
 <?php while ( have_posts() ) : the_post(); ?>
-	<?php get_template_part( 'perview', 'index' ); ?>
+	<?php get_template_part( 'preview', 'index' ); ?>
 <?php endwhile; ?>
 </div></div>
 <?php else : ?>

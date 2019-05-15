@@ -1,32 +1,18 @@
 <?php get_header(); ?>
-	<div id="content" class="ts narrow container" style="padding-top: 20px;"><div class="ts stackable grid">
+<div id="content" class="single">
+	<div class="header-wrapper">
+		<div class="bg" style="background-image:url('<?php echo(has_post_thumbnail()?the_post_thumbnail_url():"https://picsum.photos/1200#".rand()) ?>')"></div>
+	</div>
+	<div class="ts narrow container header">
+		<div class="title"><?php the_title(); ?></div>
+		<div class="meta">
+			<div><i class="calendar icon"></i><?php the_time('Y/n/j') ?> </div>
+			<div><i class="comment icon"></i><?php comments_number(__( 'No one commented', 'Carter' ),__( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' )); ?></div>
+			<div><i class="user icon"></i><?php the_author() ;?></div>
+		</div>
+	</div>
+	<div class="ts narrow container" style="padding-top: 20px;">
 		<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
-		<div class="twelve wide column">
-			
-			<div class="ts heading vertically padded slate post">
-				<div class="image">
-					<?php if ( has_post_thumbnail() ) { ?>  
-						<?php the_post_thumbnail(); ?>  
-					<?php } else {?>  
-						<script>
-							var pageHeaderImg = Trianglify({
-								width: 1000,
-								height: 360,
-								stroke_width: 20,
-								cell_size: 40,
-							});
-							document.write('<img src="' + pageHeaderImg.png() + '">');
-						</script>
-					<?php } ?> 
-				</div>
-				<span class="header"><?php the_title(); ?></span>
-				<span class="description"><i class="calendar icon"></i><?php the_time('Y/n/j') ?> 
-										  <i class="comment icon"></i><?php comments_popup_link(__( 'No one commented', 'Carter' ), __( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' ), '',__( 'Comments are closed', 'Carter' )); ?> 
-										  <?php edit_post_link('<i class="pencil icon"></i>'); ?><?php edit_post_link(__( 'Edit', 'Carter' ), ''); ?></span>
-				<span class="description">
-					<?php the_tags( '<div class="ts horizontal basic label" data-dark="basic">','</div><div class="ts horizontal basic label" data-dark="basic">' ,'</div>'); ?>
-				</span>
-			</div>
 			<div class="ts hidden divider" data-dark></div>
 			
 			<post data-dark>
@@ -44,18 +30,15 @@
     			<a class="ts button" href="https://telegram.me/share/url?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="icon telegram"></i></a>
     			<a class="ts button" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"><i class="icon tumblr"></i></a>
     			<a class="ts button" href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>"><i class="icon twitter"></i></a>
-    			<a class="ts button" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><i class="icon google plus"></i></a>
 			</div>
 			<div class="ts clearing divider" data-dark></div>
 			<?php comments_template(); ?>
 
 			<div class="ts clearing hidden divider" data-dark></div>
 			
-		</div>
+		
 		<?php endif; ?>
 		
-		<div class="four wide column">
-			<?php get_sidebar(); ?>
-		</div>
-	</div></div>
+	</div>
+</div>
 <?php get_footer(); ?>

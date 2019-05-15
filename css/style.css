@@ -1,0 +1,70 @@
+.header-wrapper {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  pointer-events: none;
+  --border-radius: 10px; }
+  .header-wrapper .bg {
+    background-size: cover;
+    background-position: center;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.2)), color-stop(90%, transparent));
+    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 10%, transparent 90%);
+    mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.2)), color-stop(90%, transparent));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 10%, transparent 90%);
+    width: 100%;
+    position: absolute;
+    min-height: 250px;
+    max-height: 100%;
+    border-radius: var(--border-radius); }
+  .header-wrapper .bg.blur {
+    -webkit-filter: blur(5px);
+    filter: blur(5px); }
+
+.header-wrapper + .header {
+  font-weight: bold;
+  margin-left: 16px;
+  margin-top: 24px;
+  position: relative;
+  color: #000; }
+  .header-wrapper + .header > .meta {
+    margin-top: 8px; }
+    .header-wrapper + .header > .meta div {
+      display: inline-block; }
+  .header-wrapper + .header > .title, .header-wrapper + .header > .subtitle {
+    line-height: 1.1em;
+    color: #000; }
+  .header-wrapper + .header > .title {
+    font-size: 2.55em;
+    line-height: 1.25em; }
+  .header-wrapper + .header > .subtitle {
+    font-size: 1.5em; }
+
+.preview-index {
+  margin: 32px 0;
+  min-height: 250px;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  display: block; }
+  .preview-index > .description {
+    padding: 16px;
+    color: #000;
+    font-size: 1.3em;
+    line-height: 1.4em; }
+  .preview-index > .buttons {
+    padding: 16px;
+    width: 100%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+
+@media screen and (max-width: 768px) {
+  .preview-index {
+    font-size: 12px; } }
+
+.single .header-wrapper {
+  --border-radius: 0; }
+  .single .header-wrapper + .header {
+    padding-top: 36px; }

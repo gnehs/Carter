@@ -183,4 +183,17 @@ function sig_add_editor_styles() {
     add_editor_style( 'editor-style.css' );
 }
 add_action( 'init', 'sig_add_editor_styles' );
+/*
+	文章描述
+*/
+//長度
+function wpdocs_custom_excerpt_length( $length ) {
+    return 180;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+//後面的……
+function wpdocs_excerpt_more( $more ) {
+    return '……';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 ?>
