@@ -49,25 +49,7 @@
 	<body  <?php body_class( $class ); ?> data-dark>
 		<header class="ts huge slate" data-dark>
 			<div class="image"> 
-				<?php if ( has_header_image() ) { ?>  
-					<img src="<?php header_image(); ?>" id="headerImg">  
-				<?php } else {?>  
-					<img id="headerImg">  
-					<script>
-						headerImg=window.sessionStorage['headerImg']
-						if(!headerImg){
-							var headerImgTrianglify = Trianglify({
-								width: window.innerWidth,
-								height: 500,
-								stroke_width: 40,
-								cell_size: 50,
-							});
-						   window.sessionStorage['headerImg'] = headerImgTrianglify.png()
-						   document.getElementById("headerImg").src = headerImgTrianglify.png()
-						}else
-							document.getElementById("headerImg").src = headerImg
-					</script>
-				<?php } ?>
+				<img src="<?php echo(has_header_image()?header_image():"https://picsum.photos/1200#".rand()) ?>" id="headerImg">  
 			</div>
 			<div class="ts narrow container">
 				<a href="<?php echo home_url ( ) ; ?>" id="backToHome">
