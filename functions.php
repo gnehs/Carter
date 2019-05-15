@@ -168,6 +168,12 @@ function sig_add_editor_styles() {
     add_editor_style( 'editor-style.css' );
 }
 add_action( 'init', 'sig_add_editor_styles' );
+
+function gutenberg_scripts() {
+	wp_enqueue_style( 'gutenbergbase-style', get_theme_file_uri( '/css/style.css' ), false);
+	wp_enqueue_style( 'gutenbergbase-tocas', get_theme_file_uri( '/tocas-ui/tocas.css' ), false);
+}
+add_action( 'enqueue_block_editor_assets', 'gutenberg_scripts' );
 /*
 	文章描述
 */
@@ -181,6 +187,7 @@ function wpdocs_excerpt_more( $more ) {
     return '……';
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
 /*
 	隱藏版本
 */
