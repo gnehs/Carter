@@ -15,7 +15,7 @@
 		<?php the_excerpt(); ?>
 	</div>
 	<div class="ts separated basic labeled icon buttons">
-		<?php edit_post_link( '<i class="write icon"></i>' . __( 'Edit', 'Carter' ), '', '', '','ts button' ); ?> 
+		<?php edit_post_link( '<i class="write icon"></i>' . __( 'Edit', 'Carter' ), '', '', '','ts warning button' ); ?> 
 		<a class="ts primary button" href="<?php the_permalink(); ?>"><i class="angle right icon"></i><?php esc_html_e( 'Read More', 'Carter' ); ?></a>
 	</div>
 	<div class="ts inverted dimmer">

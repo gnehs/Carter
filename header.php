@@ -58,7 +58,7 @@
 				</a>
 			</div>  
 		</header>
-		<nav class="ts basic fluid menu" data-dark="basic">
+		<nav class="ts fluid navfix menu" data-dark="basic">
 			<?php wp_nav_menu(
 				array(
 				'menu' => '', 
