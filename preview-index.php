@@ -3,6 +3,7 @@
         <div class="ts loader"></div>
 	</div>
 	<div>
+		<?php edit_post_link( '<i class="write icon"></i>', '', '', '','ts large icon right floated edit primary button' ); ?> 
 		<div class="header-wrapper">
 			<div class="bg" style="background-image:url('<?php echo(has_post_thumbnail()?the_post_thumbnail_url():"https://picsum.photos/1200#".rand()) ?>')"></div>
 		</div>
@@ -18,9 +19,12 @@
 			<?php the_tags( '<div class="ts horizontal basic label" data-dark="basic">','</div><div class="ts horizontal basic label" data-dark="basic">' ,'</div>'); ?>
 			<?php the_excerpt(); ?>
 		</div>
-		<div class="ts separated basic labeled icon buttons">
-			<?php edit_post_link( '<i class="write icon"></i>' . __( 'Edit', 'Carter' ), '', '', '','ts warning button' ); ?> 
-			<a class="ts primary button" href="<?php the_permalink(); ?>"><i class="angle right icon"></i><?php esc_html_e( 'Read More', 'Carter' ); ?></a>
+		<div class="continue">
+			<a href="<?php the_permalink(); ?>" 
+			   class="ts right labeled icon primary button">
+				<?php esc_html_e( 'Read More', 'Carter' ); ?>
+				<i class="angle right icon"></i>
+			</a>
 		</div>
 	</div>
 </div>

@@ -3,20 +3,30 @@
 	min-height: 250px
 	border: var(--border)
 	border-radius: var(--border-radius)
-	background-color: var(--background-color)
+	background-color: var(--body-background-color)
 	transition: all .25s ease
 	display: block
+	.dark &
+		background-color: var(--background-color)
 	div
 		transition: all .25s linear
 		>.description
 			padding: 16px
 			color: var(--text-color)
 			font-size: 1.3em
-			line-height: 1.4em
-		>.buttons
+			line-height: 1.5em
+		>.edit.button
+			margin: 8px
+			opacity: 0.65
+			transition: opacity .25s ease
+		>.continue
 			padding: 16px
-			width: 100%
-			justify-content: flex-end
+			padding-top: 0
+			text-align: right
+	&:hover
+		div 
+			>.edit.button
+				opacity: 1
 	>.ts.dimmer
 		border-radius: var(--border-radius)
 		&.active + div
