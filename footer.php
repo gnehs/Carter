@@ -8,7 +8,7 @@
 </div>
 <br>
 <!-- Footer -->
-		<nav class="ts fluid navfix menu" data-dark="basic">
+		<nav class="ts fluid borderless navfix menu">
 			 <?php wp_nav_menu(
 				 array(
 				 'menu' => '', 
@@ -31,7 +31,7 @@
 				  ));
 			  ?>
 		</nav>
-		<footer class="ts fluid slate" style="margin-bottom: 0;margin-top: 0;" data-dark>
+		<footer class="ts fluid slate" style="margin-bottom: 0;margin-top: 0;">
 			<div class="ts narrow container">
 				<?php esc_html_e( 'Copyright © ', 'Carter' ); ?><?php bloginfo('name'); ?>
 				<br>

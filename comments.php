@@ -7,7 +7,7 @@
         // and it doesn't match the cookie
     ?>
         
-		<h3 class="ts header" id="LeaveAcomment" data-dark>
+		<h3 class="ts header" id="LeaveAcomment">
             <?php esc_html_e( 'Leave a comment', 'Carter' ); ?>
             <div class="sub header"><?php esc_html_e( 'Please login first', 'Carter' ); ?></div>
         </h3>
@@ -15,14 +15,14 @@
         } else if ( !comments_open() ) {
     ?>
         
-		<h3 class="ts header" id="LeaveAcomment" data-dark>
+		<h3 class="ts header" id="LeaveAcomment">
             <?php esc_html_e( 'Leave a comment', 'Carter' ); ?>
             <div class="sub header"><?php esc_html_e( 'Comments are closed 😢', 'Carter' ); ?></div>
         </h3>
     <?php 
         } else if ( !have_comments() ) { 
     ?>
-		<h3 class="ts header" id="LeaveAcomment" data-dark>
+		<h3 class="ts header" id="LeaveAcomment">
             <?php esc_html_e( 'Leave a comment', 'Carter' ); ?>
             <div class="sub header"><?php esc_html_e( 'Leave a comment!🌚👏👏', 'Carter' ); ?></div>
         </h3>
@@ -40,7 +40,7 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
 <?php else  : ?>
 <a name="respond"></a>
 <a name="comments"></a>
-<form class="ts form" id="commentform" name="commentform" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" data-dark>
+<form class="ts form" id="commentform" name="commentform" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
     <?php if ( !is_user_logged_in() ) : ?>
 		<div class="fields">
 			<div class="field">

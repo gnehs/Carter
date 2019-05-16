@@ -13,29 +13,6 @@ GitHub Theme URI: gnehs/Carter
     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.79);
 }
 
-
-/*
-    避免後台自訂頁面亂搞背景
-*/
-
-body {
-    background: #FFF;
-}
-
-
-/*  
-    文章預覽
-*/
-
-
-/* 圖片預覽修正 */
-
-.ts.card.preview .ts.embed,
-.ts.card.preview .ts.embed img {
-    border-radius: .28571rem .28571rem 0 0;
-}
-
-
 /*
 	文章內頁
 */
@@ -73,23 +50,6 @@ post img {
     text-shadow: 0 0 0px black;
 }
 
-
-/*
-	Sidebar
-	因為和 Sidebar 起衝突，所以改成 Sidebarowo
-*/
-
-.sidebarowo a {
-    color: #787878;
-}
-
-.sidebarowo a:hover {
-    color: #4b4b4b;
-}
-
-.sidebarowo a:active {
-    color: #151010;
-}
 
 
 /* 月曆 */
@@ -179,45 +139,6 @@ ul.children ul.children {
 
 
 /*
-	NAV FIX
-	修正卷軸消失的問題
-*/
-
-.navfix {
-    overflow-x: auto;
-}
-
-
-/*
-    選單樣式
-	因為 Tocas UI 的格式不能直接套到 NAV 但是又不想直接用 JQ 只好這樣啦
-*/
-
-#footermenu>li>a,
-#headermenu>li>a {
-    position: relative;
-    vertical-align: middle;
-    line-height: 1.2;
-    padding: 0.92857em 1.14286em;
-    text-decoration: none;
-    color: #5a5a5a;
-    white-space: nowrap;
-}
-
-#footermenu>li>a:hover,
-#headermenu>li>a:hover {
-    color: #626262;
-    background-color: rgba(0, 0, 0, 0.02);
-}
-
-#footermenu>li>a:active,
-#headermenu>li>a:active {
-    color: #404040;
-    background-color: rgba(0, 0, 0, 0.09);
-}
-
-
-/*
  	圖片對齊(置右、置中)
 */
 
@@ -234,16 +155,6 @@ img.alignright {
 img.alignleft {
     float: left;
 }
-
-
-/*
-	板岩裡的圖片變暗
-*/
-
-.ts.slate .image>img {
-    filter: brightness(.8)
-}
-
 
 /*
     Night Theme
@@ -299,7 +210,7 @@ ul.inverted,
 .inverted li,
 .inverted li:before,
 .inverted .ts.speeches .speech>.author,
-.inverted *:not(code),
+.inverted *:not(code):not(.button),
 .inverted .ts.feed>.event>.content .summary,
 .inverted .ts.speeches .speech .content,
 post.inverted h1,

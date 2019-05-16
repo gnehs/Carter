@@ -27,7 +27,6 @@
 		<!-- Script -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="//unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/trianglify/1.2.0/trianglify.min.js"></script>
 		<!-- <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/tocas-ui/tocas.js"></script> -->
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/night-theme.js"></script>
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/carter.js"></script>
@@ -58,7 +57,7 @@
 				</a>
 			</div>  
 		</header>
-		<nav class="ts fluid navfix menu" data-dark="basic">
+		<nav class="ts fluid navfix borderless menu" data-dark="basic">
 			<?php wp_nav_menu(
 				array(
 				'menu' => '', 

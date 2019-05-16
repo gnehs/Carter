@@ -7,9 +7,9 @@
 	<div class="ts narrow container header">
 		<div class="title"><?php the_title(); ?></div>
 		<div class="meta">
-			<div><i class="calendar icon"></i><?php the_time('Y/n/j') ?> </div>
-			<div><i class="comment icon"></i><?php comments_number(__( 'No one commented', 'Carter' ),__( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' )); ?></div>
-			<div><i class="user icon"></i><?php the_author() ;?></div>
+			<div><i class="calendar icon outline"></i><?php the_time('Y/n/j') ?> </div>
+			<div><i class="comment icon outline"></i><?php comments_number(__( 'No one commented', 'Carter' ),__( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' )); ?></div>
+			<div><i class="user icon outline"></i><?php the_author() ;?></div>
 		</div>
 	</div>
 	<div class="ts narrow container" style="padding-top: 20px;">

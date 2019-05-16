@@ -1,0 +1,77 @@
+.meta
+	div+div:before
+		content: "．"
+body
+	background-color: var(--body-background-color)
+	color: var(--text-color)
+.ts.basic.label
+	background-color: var(--background-color)
+	color: var(--text-color)
+	border: var(--border)
+
+.ts.segment
+	background-color: var(--body-background-color)
+	color: var(--text-color)
+	border: var(--border)
+	.dark &
+		background-color: var(--background-color)
+.ts.header
+	color: var(--text-color)
+	.sub.header
+		color: var(--text-color)
+a:not(.ts)
+	color: var(--link-color)
+.ts.menu
+	border: none
+	background-color: var(--background-color)
+	.item
+		color: var(--text-color)
+		opacity: .8
+		&:hover
+			background-color: rgba(var(--hover-cover), 0.01) !important
+			color: var(--text-color) !important
+			opacity: 1
+		&:active
+			background-color: rgba(var(--hover-cover), 0.1) !important
+			color: var(--text-color) !important
+.ts.slate
+	background-color: var(--background-color)
+	color: var(--text-color)
+	.header:not(.ts):not(.sub):not(.item)
+		color: var(--text-color)
+.ts.comments
+	.comment
+		.text,.metadata
+			color: var(--text-color)
+.ts.dimmer
+	background: rgba(var(--hover-cover-inverted), 0.5) !important
+	.ts.loader
+		&:after
+			border-color: var(--text-color) transparent transparent  !important
+		&:before
+			border-color: rgba(var(--hover-cover),.45)  !important
+.ts.form .field > label
+	color: var(--text-color)
+	opacity: .8
+
+.ts.divider:not(.vertical):not(.horizontal):not(.secondary)
+	border-bottom: var(--border)
+
+post p, post
+	color: var(--text-color)
+
+.wp-block-image figcaption
+	color: var(--text-color)  !important
+	opacity: .6
+#wp-calendar
+	caption
+		caption-side: inherit
+		color: var(--text-color)
+		opacity: .8
+
+// 修正卷軸消失的問題
+.navfix 
+	overflow-x: auto
+
+
+

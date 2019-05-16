@@ -79,7 +79,7 @@ function update_today(){
     ),'ignore_sticky_posts' => 1);
     $postslist = get_posts( $args );
     if($postslist){
-        echo '<div class="widget_text ts segment sidebarowo" data-dark><h5 class="ts header" style="margin-bottom: 5px;" data-dark>'.__( 'Updated today', 'Carter' ).'</h5>'.__( 'Updated today', 'Carter' ).' '. count($postslist) .__( ' item,', 'Carter' ). '<a href="' . home_url('/').date('Y/m/d') . '">'.__( 'Read More', 'Carter' ).'</a>。</div>';
+        echo '<div class="widget_text ts segment sidebarowo"><h5 class="ts header" style="margin-bottom: 5px;" data-dark>'.__( 'Updated today', 'Carter' ).'</h5>'.__( 'Updated today', 'Carter' ).' '. count($postslist) .__( ' item,', 'Carter' ). '<a href="' . home_url('/').date('Y/m/d') . '">'.__( 'Read More', 'Carter' ).'</a>。</div>';
     }else{
         return false;
     }
@@ -93,9 +93,9 @@ function register_Footer1() {
        	'name' => __( 'Footer 1', 'Carter' ),
 		'id' => 'footer1',
 		'description' => __( 'Displayed at the bottom of each page.', 'Carter' ),
-		'before_widget' => '<div class="ts segment sidebarowo" data-dark>',
+		'before_widget' => '<div class="ts segment sidebarowo">',
 		'after_widget' => '</div>',
-		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;" data-dark>',
+		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;">',
 		'after_title' => '</h5>'
     ) );
 }
@@ -108,9 +108,9 @@ function register_Footer2() {
        	'name' => __( 'Footer 2', 'Carter' ),
 		'id' => 'footer2',
 		'description' => __( 'Displayed at the bottom of each page.', 'Carter' ),
-		'before_widget' => '<div class="ts segment sidebarowo" data-dark>',
+		'before_widget' => '<div class="ts segment sidebarowo">',
 		'after_widget' => '</div>',
-		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;" data-dark>',
+		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;">',
 		'after_title' => '</h5>'
     ) );
 }
@@ -123,9 +123,9 @@ function register_Footer3() {
        	'name' => __( 'Footer 3', 'Carter' ),
 		'id' => 'footer3',
 		'description' => __( 'Displayed at the bottom of each page.', 'Carter' ),
-		'before_widget' => '<div class="ts segment sidebarowo" data-dark>',
+		'before_widget' => '<div class="ts segment sidebarowo">',
 		'after_widget' => '</div>',
-		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;" data-dark>',
+		'before_title' => '<h5 class="ts header" style="margin-bottom: 5px;">',
 		'after_title' => '</h5>'
     ) );
 }

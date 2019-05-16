@@ -3,7 +3,6 @@
 	position: relative
 	min-height: 1px
 	pointer-events: none
-	--border-radius: 10px
 	.bg
 		background-size: cover
 		background-position: center
@@ -20,16 +19,19 @@
 	margin-left: 16px
 	margin-top: 24px
 	position: relative
-	color: #000
+	color: var(--text-color)
 	>.meta
 		margin-top: 8px
+		font-weight: 500
+		opacity: .8
 		div
 			display: inline-block
 	>.title,>.subtitle
 		line-height: 1.1em
-		color: #000
+		overflow: hidden
 	>.title
 		font-size: 2.55em
 		line-height: 1.25em
 	>.subtitle
 		font-size: 1.5em
+		opacity: .85
