@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
 <div id="content" class="single">
-	<?php edit_post_link( '<i class="write icon"></i>', '', '', '','ts large icon right floated edit opinion button m-16' ); ?> 
+	<?php edit_post_link( '<i class="write icon"></i>', '', '', '','ts large icon right floated edit opinion button m-16' ); ?>
 	<div class="header-wrapper">
 		<div class="bg" style="background-image:url('<?php echo(has_post_thumbnail()?the_post_thumbnail_url():"https://picsum.photos/1200#".rand()) ?>')"></div>
 	</div>
@@ -15,7 +15,7 @@
 	</div>
 	<div class="ts narrow container" style="padding-top: 20px;">
 		<div class="ts hidden divider"></div>
-		
+
 		<post>
 			<?php the_content(); ?>
 		</post>
@@ -57,6 +57,7 @@
 			<a class="ts button" href="https://t.me/share/url?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="icon telegram"></i></a>
 			<a class="ts button" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"><i class="icon tumblr"></i></a>
 			<a class="ts button" href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>"><i class="icon twitter"></i></a>
+			<a class="ts button" href="https://www.pinterest.com/pin/create/button/?description=<?php the_title(); ?>&url=<?php the_permalink(); ?>"><i class="icon pinterest"></i></a>
 		</div>
 		<div class="ts clearing divider"></div>
 		<?php comments_template(); ?>
