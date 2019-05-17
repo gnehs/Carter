@@ -4,44 +4,33 @@
    Translations can be filed in the /languages/ directory.
    翻譯文件在 /languages/
 */
-  	load_theme_textdomain( 'Carter', get_template_directory() . '/languages' );
+load_theme_textdomain( 'Carter', get_template_directory() . '/languages' );
 /*
 	特色圖片支持
 */
-	add_theme_support( 'post-thumbnails' );
+add_theme_support('post-thumbnails');
 /*
 	讓文本小工具可以支援短 code
 */
-	add_filter('widget_text', 'do_shortcode');
-/*
-	文章格式支援（測試中）
-*/
-	add_theme_support( 'post-formats', array( 'aside', 'chat','gallery','image','link', 'quote', 'status', 'video', 'audio' ) );
+add_filter('widget_text', 'do_shortcode');
 /*
     頁首圖片支持！
 */
-$defaults = array(
-	'default-image'          => '',
-	'width'                  => 1800,
-	'height'                 => 500,
+$customHeader = array(
+	'default-image'          => 'https://picsum.photos/1600',
+	'width'                  => 1200,
+	'height'                 => 300,
 	'flex-height'            => false,
 	'flex-width'             => false,
-	'uploads'                => true,
-	'random-default'         => false,
-	'header-text'            => true,
-	'default-text-color'     => '',
-	'wp-head-callback'       => '',
-	'admin-head-callback'    => '',
-	'admin-preview-callback' => '',
+	'uploads'                => true
 );
-add_theme_support( 'custom-header', $defaults );
+add_theme_support('custom-header', $customHeader);
 /*
 	留言框架
 */
 function aurelius_comment($comment, $args, $depth) 
 {
    $GLOBALS['comment'] = $comment; ?>
-   
 	<div class="ts comments">
 		<div class="comment">
 			<a class="avatar">
@@ -67,7 +56,6 @@ function aurelius_comment($comment, $args, $depth)
 /*
 	本日更新!
 	<?php update_today();?> 來使用
-	預設在 sidebarowo 有套用在最上面
 */         
 function update_today(){
     $args = array('date_query' => array(
@@ -207,28 +195,92 @@ function shapeSpace_remove_version_scripts_styles($src) {
 add_filter('style_loader_src', 'shapeSpace_remove_version_scripts_styles', 9999);
 add_filter('script_loader_src', 'shapeSpace_remove_version_scripts_styles', 9999);
 /*
-menu test 
+	menu walker 
 */
 class Walker_Quickstart_Menu extends Walker {
-
-    // Tell Walker where to inherit it's parent and id values
     var $db_fields = array(
         'parent' => 'menu_item_parent', 
         'id'     => 'db_id' 
     );
-
-    /**
-     * At the start of each element, output a <li> and <a> tag structure.
-     * 
-     * Note: Menu objects include url and title properties, so we will use those.
-     */
     function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
-        $output .= sprintf( "\n<a class='item' href='%s'%s>%s</a>\n",
+        $output .= sprintf( "<a class='item' href='%s'%s>%s</a>",
             $item->url,
             ( $item->object_id === get_the_ID() ) ? ' class="current"' : '',
             $item->title
         );
     }
+}
+/*
+	主題設定頁面
+
+
+function carter_menu() {
+	add_options_page( 'Carter', 'Carter', 'manage_options', 'carter', 'carter_options' );
+}
+add_action( 'admin_menu', 'carter_menu' );
+function carter_options() {
+	if ( !current_user_can( 'manage_options' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
+	echo '<div class="wrap">';
+	echo '<p>Here is where the form would go if I actually had options.</p>';
+	echo '</div>';
+}
+*/
+/*
+	密碼保護頁面
+*/
+function carter_password_form() {
+    global $post;
+    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+	$o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post" class="ts form">
+		<fieldset class="secondary">
+			<div class="field">
+				<p>' . __( 'This content is password protected. To view it please enter your password below:' ) . '</p>
+				<div class="ts action fluid input">
+					<input type="password" placeholder="'.__( "Password" ).'" id="' . $label . '" name="post_password">
+					<button class="ts button">'.__( "Submit" ).'</button>
+				</div>
+			</div>
+		</fieldset>
+    </form>
+    ';
+    return $o;
+}
+add_filter( 'the_password_form', 'carter_password_form' );
+/*
+	Meta Tag
+*/
+function meta_get_excerpt($post_id) {
+    $temp = $post;
+    $post = get_post( $post_id );
+    setup_postdata( $post );
+
+    $excerpt = esc_attr(strip_tags(get_the_excerpt()));
+    
+    wp_reset_postdata();
+    $post = $temp;
+
+    return $excerpt;
+}
+
+function custom_add_meta_tag() {
+	$meta_desc = is_singular() ? meta_get_excerpt(get_the_ID()) : get_bloginfo('description');
+	echo '<meta property="description" content="' . $meta_desc . '"/>';
+	if ( !is_singular()) //if it is not a post or a page
+        return;
+        echo '<meta property="og:title" content="' . get_the_title() . '"/>';
+        echo '<meta property="og:type" content="article"/>';
+        echo '<meta property="og:url" content="' . get_permalink() . '"/>';
+        echo '<meta property="og:site_name" content="'.get_bloginfo('name').'"/>';
+    if(!has_post_thumbnail( $post->ID )) { 
+        echo '<meta property="og:image" content="https://picsum.photos/1200"/>';
+    }
+    else{
+        $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+        echo '<meta property="og:image" content="'. esc_attr( $thumbnail_src[0] ) .'"/>';
+	}
 
 }
+add_action('wp_head', 'custom_add_meta_tag', 1);
 ?>
