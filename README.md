@@ -12,7 +12,7 @@
 1. 夜間模式預設在 21~5 點開啟
 2. 您可在 `header.php` 第 `37` 行找到相關調整選項
 3. 目前可調整選項：預設、強制啟用、強制停用
-4. 若您要新增切換夜間模式按鈕，請複製下方程式碼並貼上到"自訂 HTML"小工具
+4. 若您要新增切換夜間模式按鈕，請複製下方程式碼並貼上到「自訂 HTML」小工具
 ```html
 <button class="ts fluid button" onclick="NightMode_switchToNightTheme('true')" id="nightmode">On</button>
 ```
