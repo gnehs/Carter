@@ -25,7 +25,7 @@
 			if (!empty($categories)) {
 				$output = '<p>';
 				foreach( $categories as $category ) {
-					$output .= '<a class="ts label" href="' . esc_url( get_category_link( $category->term_id ) ) . '">
+					$output .= '<a class="ts horizontal basic label" href="' . esc_url( get_category_link( $category->term_id ) ) . '">
 						<i class="th icon"></i>' . esc_html( $category->name ) . '
 					</a>';
 				}
@@ -38,7 +38,7 @@
 		if (!empty($tags)) {
 			$output = '<p>';
 			foreach( $tags as $tag ) {
-				$output .= '<a class="ts label" href="' . esc_url( get_category_link( $tag->term_id ) ) . '">
+				$output .= '<a class="ts horizontal basic label" href="' . esc_url( get_category_link( $tag->term_id ) ) . '">
 					<i class="hashtag icon"></i>' . esc_html( $tag->name ) . '
 				</a>';
 			}
