@@ -17,7 +17,7 @@ add_filter('widget_text', 'do_shortcode');
     頁首圖片支持！
 */
 $customHeader = array(
-	'default-image'          => 'https://picsum.photos/1600',
+	'default-image'          => 'https://picsum.photos/1920/1080/?random',
 	'width'                  => 1200,
 	'height'                 => 300,
 	'flex-height'            => false,

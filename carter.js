@@ -18,7 +18,7 @@ $(function () {
             document.location.href = $(this).attr("data-R18href");
         }
     })
-    $(".preview-index a").click(function () {
+    $(".preview-index a:not(.join)").click(function () {
         ($(this).parents('.preview-index')).find('.ts.dimmer').addClass('active')
     })
     $(".click.load").click(function () {
