@@ -45,8 +45,8 @@
 		<!-- /wp_head -->
 	</head>
 	
-	<body  <?php body_class( $class ); ?> data-dark>
-		<header class="ts huge slate" data-dark>
+	<body <?php body_class( $class ); ?> >
+		<header class="ts huge slate">
 			<div class="image"> 
 				<img src="<?php echo(has_header_image()?header_image():"https://picsum.photos/1200#".rand()) ?>" id="headerImg">  
 			</div>
@@ -57,7 +57,7 @@
 				</a>
 			</div>  
 		</header>
-		<nav class="ts fluid navfix borderless menu" data-dark="basic">
+		<nav class="ts fluid navfix borderless menu">
 			<?php wp_nav_menu(
 				array(
 				'menu' => '', 

@@ -42,7 +42,7 @@ function aurelius_comment($comment, $args, $depth)
 {
    $GLOBALS['comment'] = $comment; ?>
    
-	<div class="ts comments" data-dark>
+	<div class="ts comments">
 		<div class="comment">
 			<a class="avatar">
 				<?php if (function_exists('get_avatar') && get_option('show_avatars')) { echo get_avatar($comment, 48); } ?>
@@ -79,7 +79,7 @@ function update_today(){
     ),'ignore_sticky_posts' => 1);
     $postslist = get_posts( $args );
     if($postslist){
-        echo '<div class="widget_text ts segment sidebarowo"><h5 class="ts header" style="margin-bottom: 5px;" data-dark>'.__( 'Updated today', 'Carter' ).'</h5>'.__( 'Updated today', 'Carter' ).' '. count($postslist) .__( ' item,', 'Carter' ). '<a href="' . home_url('/').date('Y/m/d') . '">'.__( 'Read More', 'Carter' ).'</a>。</div>';
+        echo '<div class="widget_text ts segment sidebarowo"><h5 class="ts header" style="margin-bottom: 5px;">'.__( 'Updated today', 'Carter' ).'</h5>'.__( 'Updated today', 'Carter' ).' '. count($postslist) .__( ' item,', 'Carter' ). '<a href="' . home_url('/').date('Y/m/d') . '">'.__( 'Read More', 'Carter' ).'</a>。</div>';
     }else{
         return false;
     }

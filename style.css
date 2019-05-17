@@ -8,7 +8,7 @@ Version: 2.2.2
 GitHub Theme URI: gnehs/Carter
 */
 
-[data-dark].changeing {
+[].changeing {
     transition: .4s;
     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.79);
 }

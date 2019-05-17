@@ -393,7 +393,7 @@ Tocas = class Tocas {
   // children 取得容器裡的第一層子節點。
   children(selector) {
     return this.collectSwap(function () {
-      return this.querySelectorAll(selector != null ? `:scope > ${selector}` : ':scope > *');
+      return this.querySelectorAll(selector != null ? `:scope> ${selector}` : ':scope> *');
     });
   }
 
@@ -436,7 +436,7 @@ Tocas = class Tocas {
       var $children, $parent, $self, index;
       $self = new Tocas(this);
       $parent = $self.parent();
-      $children = selector != null ? $parent.find(`:scope > ${selector}`) : $parent.find(':scope > *');
+      $children = selector != null ? $parent.find(`:scope> ${selector}`) : $parent.find(':scope> *');
       index = $self.index();
       return $children.slice(index + 1);
     });
@@ -448,7 +448,7 @@ Tocas = class Tocas {
       var $children, $parent, $self, index;
       $self = new Tocas(this);
       $parent = $self.parent();
-      $children = selector != null ? $parent.find(`:scope > ${selector}`) : $parent.find(':scope > *');
+      $children = selector != null ? $parent.find(`:scope> ${selector}`) : $parent.find(':scope> *');
       index = $self.index();
       return $children.slice(0, index);
     });
@@ -663,7 +663,13 @@ Tocas = class Tocas {
   // bindWithOptions 以進階選項綁定並註冊一個事件監聽器。
   bindWithOptions(options) {
     var data, events, handler, selector;
-    ({ events, handler, selector, data, options } = options);
+    ({
+      events,
+      handler,
+      selector,
+      data,
+      options
+    } = options);
     events = this._alias(events);
     // $events.click =
     // {
@@ -885,11 +891,11 @@ Tocas = class Tocas {
                 return this.$events[eventName].anonymous.splice(index, 1);
               }
             });
-          // 當本事件名稱不僅是別名時。
+            // 當本事件名稱不僅是別名時。
           case !(!isAlias && hasAlias && this.$events[eventName] !== void 0):
             // 移除指定事件的別名監聽函式。
             return delete this.$events[eventName][aliasName];
-          // 當僅有指定別名時。
+            // 當僅有指定別名時。
           case !(isAlias && !hasAlias):
             // 移除所有與此別名有關的事件監聽器。
             results = [];
@@ -909,7 +915,7 @@ Tocas = class Tocas {
             }
             return results;
             break;
-          // 當僅有指定事件名稱時。
+            // 當僅有指定事件名稱時。
           case this.$events[eventName] === void 0:
             // 清空該事件的所有事件監聽器。
             return delete this.$events[eventName];
@@ -1090,11 +1096,12 @@ Tocas = class Tocas {
       options = {
         ...{
           name: '',
-          callback: function () { },
+          callback: function () {},
           interval: 0,
           looping: false,
           visible: false
-        }, ...options
+        },
+        ...options
       };
       return this.each(function () {
         var timer;
@@ -1193,7 +1200,7 @@ Tocas = class Tocas {
   // repaint 讓瀏覽器重繪元素。
   repaint() {
     return this.each(function () {
-      return void (this.offsetHeight);
+      return void(this.offsetHeight);
     });
   }
 
