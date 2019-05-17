@@ -50,52 +50,6 @@ post img {
     text-shadow: 0 0 0px black;
 }
 
-
-
-/* 月曆 */
-
-#wp-calendar {
-    width: 100%;
-    text-align: center;
-}
-
-#wp-calendar td {
-    border-radius: 3px;
-}
-
-#wp-calendar td#today {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #FFF;
-}
-
-#wp-calendar td#today a {
-    color: #e4d1fe;
-}
-
-#wp-calendar td:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.7);
-}
-
-#wp-calendar a {
-    color: #788df5;
-}
-
-#wp-calendar td.pad:hover {
-    background-color: #FFF;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-#wp-calendar td:hover>a {
-    color: #788df5;
-}
-
-#wp-calendar>caption {
-    font-size: 1.5rem;
-    padding-bottom: 12px;
-}
-
-
 /* 近期迴響 */
 
 #recentcomments>.recentcomments {
@@ -103,18 +57,6 @@ post img {
     padding: 5px 3px;
 }
 
-
-/*
-	留言
-*/
-
-
-/*留言中的回覆*/
-
-ul.children,
-ul.children ul.children {
-    margin-left: 20px !important;
-}
 
 
 /*
@@ -156,112 +98,10 @@ img.alignleft {
     float: left;
 }
 
-/*
-    Night Theme
-*/
 
-
-/*留言 表單 板岩*/
-
-.ts.inverted.comments .comment .text,
-.ts.inverted.comments .comment,
-.ts.inverted.form .field,
-.ts.inverted.form .field>label,
-.ts.inverted.form .field>small,
-.ts.inverted.form .field>.inputs>small,
-.ts.inverted.slate {
-    color: #fff;
-}
-
-body.inverted {
-    background: #372323;
-}
-
-.ts.inverted.slate,
-.ts.inverted.segment {
-    background: #333;
-}
-
-nav.ts.fluid.menu.inverted a {
-    color: #fff !important;
-}
-
-nav.ts.fluid.menu.inverted a:hover {
-    background: #292929 !important;
-    color: #EFEFEF;
-}
-
-nav.ts.fluid.menu.inverted a:active {
-    background: #1E1E1E !important;
-    color: #D8D8D8 !important;
-}
-
-.inverted.ts.card,
-.inverted.ts.menu,
-.inverted.ts.segment,
-.inverted.ts.slate,
-.inverted .ts.speeches .speech .content {
-    box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.06);
-    background: #333;
-    border-color: #3e3d3d;
-}
-
-ul.inverted,
-.inverted li,
-.inverted li:before,
-.inverted .ts.speeches .speech>.author,
-.inverted *:not(code):not(.button),
-.inverted .ts.feed>.event>.content .summary,
-.inverted .ts.speeches .speech .content,
-post.inverted h1,
-post.inverted h2,
-post.inverted h3,
-post.inverted h4,
-post.inverted h5,
-post.inverted h6,
-post.inverted .ts.header {
-    color: #fff !important;
-}
 
 post.inverted code {
     color: #bd4147 !important;
-}
-
-.inverted a {
-    color: rgb(239, 239, 239);
-}
-
-.inverted a:hover {
-    color: rgba(255, 255, 255, 0.75);
-}
-
-.inverted a:active {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-
-/* 月曆 */
-
-.sidebarowo.inverted #wp-calendar td.pad:hover {
-    background-color: #333;
-}
-
-.sidebarowo.inverted #wp-calendar td#today {
-    color: #FFF;
-}
-
-.sidebarowo.inverted #wp-calendar a {
-    color: #788df5;
-}
-
-.sidebarowo.inverted #wp-calendar td#today:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #FFF;
-}
-
-.sidebarowo.inverted #wp-calendar td:hover {
-    background-color: rgba(255, 255, 255, 0.11);
-    color: #FFF;
 }
 
 
@@ -283,12 +123,4 @@ post.inverted code {
 
 .inverted .swal-button--cancel {
     color: #2b2b2b !important;
-}
-
-/*
-    preview-index
-*/
-.preview-index .img img {
-    max-width: 100%;
-    height: auto;
 }

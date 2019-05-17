@@ -8,7 +8,7 @@
 			<div class="bg" style="background-image:url('<?php echo(has_post_thumbnail()?the_post_thumbnail_url():"https://picsum.photos/1200#".rand()) ?>')"></div>
 		</div>
 		<div class="header">
-			<div class="title"><?php the_title(); ?></div>
+			<a class="title" href="<?php the_permalink(); ?>" ><?php the_title(); ?></a>
 			<div class="meta">
 				<div><i class="calendar icon outline"></i><?php the_time('Y/n/j') ?></div>
 				<div><i class="comment icon outline"></i><?php comments_number(__( 'No one commented', 'Carter' ),__( '1 Comment', 'Carter' ),__( '% Comments', 'Carter' )); ?></div>
