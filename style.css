@@ -4,14 +4,9 @@ Theme URL: https://github.com/gnehs/Carter
 Description: Cater by Gnehs
 Author: 棒棒勝
 Author URI: https://github.com/gnehs/Carter
-Version: 2.2.2
+Version: 3.0.0
 GitHub Theme URI: gnehs/Carter
 */
-
-[].changeing {
-    transition: .4s;
-    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.79);
-}
 
 /*
 	文章內頁
