@@ -4,7 +4,7 @@
 	<!-- Blog Post -->
 		<div class="index">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					<?php get_template_part( 'preview', 'index' ); ?>
+				<?php get_template_part( 'preview', 'index' ); ?>
 			<?php endwhile; ?>
 		</div>
 		<!-- Blog Navigation -->
