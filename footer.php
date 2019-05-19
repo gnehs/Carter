@@ -1,13 +1,13 @@
-<br>
-<div class="ts narrow container">
-	<div class="ts three column stackable grid">
-    	<div class="column"><?php dynamic_sidebar('footer1');?></div>
-    	<div class="column"><?php dynamic_sidebar('footer2');?></div>
-    	<div class="column"><?php dynamic_sidebar('footer3');?></div>
-	</div>
-</div>
-<br>
-<!-- Footer -->
+		<br>
+		<div class="ts narrow container">
+			<div class="ts three column stackable grid">
+				<div class="column"><?php dynamic_sidebar('footer1');?></div>
+				<div class="column"><?php dynamic_sidebar('footer2');?></div>
+				<div class="column"><?php dynamic_sidebar('footer3');?></div>
+			</div>
+		</div>
+		<br>
+		<!-- Footer -->
 		<nav class="ts fluid navfix borderless menu">
 			<?php wp_nav_menu(
 				array(
