@@ -58,23 +58,12 @@
 		<nav class="ts fluid navfix borderless menu">
 			<?php wp_nav_menu(
 				array(
-				'menu' => '', 
-				'container' => '',
-				'container_class' => '', 
-				'container_id' => '', 
-				'menu_class' => '',
-				'menu_id' => '',
-				'echo' => true,
-				'fallback_cb' => 'wp_page_menu', 
-				'before' => '', 
-				'after' => '',
-				'link_before' => '', 
-				'link_after' => '',
-				'items_wrap' => '<div id="%1$s" class="%2$s ts narrow container">%3$s</div>',
-				'item_spacing' => 'preserve',
-				'depth' => 1,
-				'walker' =>  new Walker_Quickstart_Menu(),
-				'theme_location' => 'headernav'
+					'container' => '',
+					'fallback_cb' => false, 
+					'items_wrap' => '<div id="%1$s" class="%2$s ts narrow container">%3$s</div>',
+					'depth' => 1,
+					'walker' =>  new tocas_menu(),
+					'theme_location' => 'headernav'
  				));
 			 ?>
 		</nav>

@@ -197,7 +197,7 @@ add_filter('script_loader_src', 'shapeSpace_remove_version_scripts_styles', 9999
 /*
 	menu walker 
 */
-class Walker_Quickstart_Menu extends Walker {
+class tocas_menu extends Walker {
     var $db_fields = array(
         'parent' => 'menu_item_parent', 
         'id'     => 'db_id' 
