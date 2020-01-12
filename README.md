@@ -17,9 +17,9 @@
 <button class="ts fluid button" onclick="NightMode_switchToNightTheme('true')" id="nightmode">On</button>
 ```
 ## 翻譯
-- 翻譯文件在  /languages/  
+- 翻譯文件在  `/languages/`  
 - 翻譯完成後歡迎推 PR 回來(##
 ## 支援的語言
-- 繁體中文(by 棒棒勝)
-- 简体中文(by 棒棒勝)
-- English(by Google Translate & 棒棒勝)
+- 繁體中文
+- 简体中文
+- English
